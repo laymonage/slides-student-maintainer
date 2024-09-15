@@ -1,0 +1,13 @@
+:not(pre) > code:before, :not(pre) > code:after {
+  content: '';
+}
+
+.none-enter-active,
+.none-leave-active {
+  transition: none;
+}
+
+.none-enter-from,
+.none-leave-to {
+  opacity: 0;
+}
