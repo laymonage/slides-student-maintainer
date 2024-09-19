@@ -203,7 +203,11 @@ Well, almost. Using sessions would mean that the data will be lost when the user
 
 I looked it up, and saw that Django has a JSONField for this purpose, but it was only available for Postgres. We did use Postgres on Heroku for the deployed website, but we also used SQLite for local development. JSONField was not an option for me.
 
-So, I was like. Okay, how hard is it to have my own JSONField? If I can transform the dictionary into a string, I can save it to a TextField. Then, I just need some way to parse it back into a dictionary. And that's... what I did!
+So, I was like. Okay, how hard is it to have my own JSONField? If I can transform the dictionary into a string, I can save it to a TextField. Then, I just need some way to parse it back into a dictionary. And that's...
+
+!!!
+
+what I did! I just used Python's built-in JSON library to serialize and deserialize the data, then I can save the data in a TextField.
 
 That being said, please don't try this at home!
 -->
@@ -212,10 +216,12 @@ That being said, please don't try this at home!
 layout: center
 ---
 
-# One year later...
+# A few months later...
 
 <!--
-And then one year later...
+I finished my web development course by the end of 2018.
+
+A few months later...
 -->
 
 ---
@@ -262,9 +268,7 @@ Organizations like Django can list a few project ideas and apply to the program,
 
 Django has participated in GSoC every year since 2016. And for each year, we put a list of project ideas on the wiki.
 
-I finished my web development course by the end of 2018. In the next term, so early 2019, I took a database course.
-
-I already knew about GSoC at that point, and since I've learned a bit of Django, I was curious about Django's ideas for GSoC.
+I already knew about GSoC at that point, and since I've learned a bit of Django, I was curious about Django's ideas for GSoC that year.
 
 Notice how it says **in no particular order**. Well it just so happened that the first item on the list was:
 
@@ -273,6 +277,61 @@ Notice how it says **in no particular order**. Well it just so happened that the
 That was... _basically_ the **exact** thing I hacked together in my project.
 
 **I was _hooked_.**
+-->
+
+---
+transition: slide-up
+---
+
+# Getting the feel of it
+
+
+
+<v-switch>
+  <template #0>
+
+<img class="rounded-md w-xl mx-auto mb-4" src="/easy-pickings.png" />
+
+  </template>
+
+
+  <template #1>
+
+<img v-click class="rounded-md h-sm mx-auto mb-4" src="/first-pr.png" />
+
+  </template>
+
+  <template #2>
+
+<img class="rounded-md w-4xl mx-auto mb-4" src="/first-three-prs.png" />
+
+  </template>
+</v-switch>
+
+<!--
+The thing with GSoC is that if you wanted to get in, you have to realize there are other students like yourself. So, you need to convince the mentors that you are the right person for the job. You have to stand out among other applicants. It's just like job hunting.
+
+So, before I started working on my proposal, I concocted a plan. I wanted to get at least one PR to Django merged – but hopefully more than just one.
+
+I started looking into the contribution guide, and I
+
+!!!
+
+watched the ticket tracker, waiting for a new ticket marked as "easy pickings" – which is kind of like a "good first issue" label on GitHub. They come and go so quickly.
+
+!!!
+
+Eventually I was able to land my first PR to Django – after some back and forth. As you can see there are 21 comments on the PR, for something that's essentially a one-line change, with three lines of test, and some documentation.
+
+I learned a lot from this PR and it was a great experience. You get the general feeling and the common practices on how to make changes to the codebase.
+
+Because you need to demonstrate that you are willing to learn. You are able to follow the instructions, and you are **patient**. Which may sound trivial, but it is actually a big deal in open source. Speaking from experience, there are people who rush to get things done and their PR merged, and not following instructions from the maintainers. That is not a good outlook.
+
+!!!
+
+Then I got two more PRs merged, one of which was for a ticket that I wrote myself. All of these are basically just one-liners, but they cover different aspects: implementation, tests, and documentation.
+
+Now that I have three PRs, I got started with my proposal.
 -->
 
 ---
@@ -298,7 +357,7 @@ transition: none
 </v-switch>
 
 <!--
-I put together my proposal. I wrote the goals, the approach, and the timeline for the project.
+I wrote the goals, the approach, and the timeline for the project.
 
 Mind you, at the time, I was still taking my databases course. So, I just started learning SQL and the basic stuff like foreign keys and joins and whatnot.
 
@@ -325,7 +384,21 @@ transition: slide-up
 
 # A hit!
 
+
+<v-switch>
+  <template #0>
+
 <img class="rounded-md h-sm mx-auto mb-4" src="/gsoc-acceptance.png" />
+
+  </template>
+
+  <template #1>
+
+<img class="rounded-md w-4xl mx-auto mb-4" src="/gsoc-summary.png" />
+
+  </template>
+
+</v-switch>
 
 <!--
 I got this!
@@ -336,7 +409,9 @@ It was happening!!!
 
 !!!
 
-So, over the course of the summer, I worked on the project. I didn't start from scratch, mind you.
+So, over the course of the summer, I worked on the project. I was slightly intimidated when I saw that I had not one, not two, but four people mentoring me. It felt like the expectation was quite high.
+
+But thankfully, I didn't have to start from scratch.
 -->
 
 ---
@@ -484,6 +559,26 @@ transition: slide-up
 
 </v-switch>
 
+<!--
+On June 9th 2019, which happened to be my 20th birthday, I submitted this initial PR to Django.
+
+You can see how many people reviewed the PR. On the right side there.
+
+!!!
+
+I have blurred the number of comments on the PR. Would anybody like to take a guess on how many comments we have here?
+
+!!!
+
+There were 321 comments. This was just the initial PR that I kept on iterating.
+
+So at one point, we decided to close it and open a new one to start fresh.
+
+!!!
+
+This is the final PR, opened months later in January 2020. GSoC already ended in August. It wasn't merged until May 8th 2020, so when COVID really kicked in.
+-->
+
 ---
 transition: slide-up
 ---
@@ -491,6 +586,29 @@ transition: slide-up
 # Months later...
 
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/jsonfield-releasenotes.png" />
+
+<!--
+Then a few months later, in August of 2020, Django 3.1 was finally released – which included the new cross-database JSONField that I worked on.
+
+So it took a little over a year from when I submitted the initial PR to the day it was released.
+
+But hey, we made it!
+-->
+
+---
+transition: slide-up
+---
+
+# DjangoChat
+
+<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/djangochat.png" />
+
+<!--
+Then I was invited by Carlton and Will Vincent to the DjangoChat podcast. If you didn't know already – give it a listen, it's great.
+This was my first ever podcast. And still my only one so far – hint hint?
+
+I was very nervous. I could've done better, but it's out there now, so if you do listen to it, please keep that in mind.
+-->
 
 ---
 transition: slide-up
@@ -500,13 +618,54 @@ transition: slide-up
 
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/djceu-2020.png" />
 
+<!--
+And then a few months later, I got the opportunity to give a talk about the JSONField implementation at DjangoCon Europe 2020. It was supposed to be in-person in Portugal, but COVID happened, so it was done virtually.
+
+This was my first ever talk at a conference.
+-->
+
 ---
 transition: slide-up
 ---
 
 # Internship
 
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/internship.png" />
+<v-switch>
+
+  <template #1>
+
+<div class="relative">
+  <img alt="" class="rounded-md absolute top-0 left-0 w-md mx-auto mb-4" src="/internship-0.png" />
+  <img alt="" class="rounded-md absolute top-20 right-0 w-md mx-auto mb-4" src="/internship-1.png" />
+</div>
+
+  </template>
+
+  <template #2>
+
+<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/internship-2.png" />
+
+  </template>
+
+</v-switch>
+
+<!--
+Later that year, I had to find an internship as part of my undergraduate degree. But unfortunately,
+
+!!!
+
+due to COVID, it was so hard to get one. A lot of the companies did not open any internship positions, and many even cancelled their programs.
+
+However, I did get lucky.
+
+!!!
+
+I have some friends who worked at an agency – they use Django. And one of them noticed my JSONField project from the DjangoChat podcast.
+
+I applied for an internship with them, and I got it. Thanks to Django!
+
+My friend sent me this screenshot back in 2020. I'm so glad I've been keeping these "receipts" so I can use them for my talk.
+-->
 
 ---
 transition: slide-up
@@ -514,7 +673,50 @@ transition: slide-up
 
 # Bachelor thesis
 
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/graduation.png" />
+<div class="relative">
+  <img alt="" class="rounded-md absolute top-16 left-46 w-xl mx-auto mb-4" src="/graduation.png" />
+  <img alt="" class="rounded-md absolute top-0 left-32 w-[17.5rem] mx-auto mb-4" src="/bachelor-thesis.png" />
+</div>
+
+<!--
+Then I wrote my bachelor thesis about my JSONField implementation – and I graduated in 2021.
+
+And of course, even my graduation was virtual. COVID sucks.
+-->
+
+---
+transition: slide-up
+---
+
+# Django Discord
+
+<v-switch>
+
+  <template #0>
+    <img alt="" class="rounded-md w-xs mx-auto mb-4" src="/discord-0.png" />
+  </template>
+
+  <template #1>
+
+  <img alt="" class="rounded-md w-xl mx-auto mb-4" src="/discord-1.png" />
+
+  </template>
+
+</v-switch>
+
+<!--
+A few months later, Carlton hit me up about a new Django Discord server.
+
+It was not officially launched yet, so it was a bit hush-hush. But sure, I joined it.
+
+I didn't really participate that much, but I looked for job listings from time to time, since I just graduated. And then one day...
+
+!!!
+
+I saw this message from Thibaud (whom I didn't really know at the time), a job listing for a junior level developer at Torchbox, an agency in the UK. They were doing remote hiring, pretty much worldwide.
+
+So I looked at their website, and then I found...
+-->
 
 ---
 transition: slide-up
@@ -524,13 +726,39 @@ transition: slide-up
 
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/torchbox-listing.png" />
 
+<!--
+This!
+
+A job listing for a Wagtail Developer.
+
+The role is to work on Wagtail itself, an open-source content management system built on top of Django.
+
+I looked at the requirements, and I think I pretty much ticked all the boxes, so I sent my application.
+
+Then I did a couple interviews and a coding task. I was interviewed by Tom Dyson, the CTO, and he knew about my JSONField stuff. A few days later, I got the job!
+
+They wanted me to move to the UK as soon as possible, but it was a surprise for me and my family. So I asked to work remotely for a few months while we sort out my visa and stuff.
+-->
+
 ---
 transition: slide-up
 ---
 
 # First thing on the job
 
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/wagtailspace.png" />
+<img alt="" v-click class="rounded-md h-sm mx-auto mb-4" src="/wagtailspace.png" />
+
+<!--
+And do you know what one of the first things I did on the job was?
+
+Well, Wagtail had their own version of JSONField that used the TextField approach. Around that time, it happened that Wagtail was about to bump its minimum Django version to 3.2, which includes the new JSONField.
+
+So naturally, I was tasked to migrate all these existing text-based "JSONField"s into real JSONFields.
+
+Then I did a talk about it at Wagtail Space US, which is Wagtail's own conference. But I did it virtually because I was still in Indonesia.
+
+And then a few months later...
+-->
 
 ---
 transition: slide-up
@@ -539,6 +767,14 @@ transition: slide-up
 # Moved to 🇬🇧
 
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/bristol.jpg" />
+
+<!--
+I moved to the UK!
+
+This is me on the Clifton Suspension Bridge in Bristol, during my first week in the UK.
+
+Then, just a few weeks later, I went to DjangoCon Europe 2022 in Porto, in person this time. Can you guess the people I met there?
+-->
 
 ---
 transition: slide-up
@@ -550,12 +786,26 @@ transition: slide-up
 
 *Unless they're from the Django community!
 
+<!--
+My GSoC mentors!
+
+They are some of the absolute legends in the Django community and I was so happy to finally meet them.
+
+You know what they say – don't meet your heroes, unless they're from the Django community. Cause they are awesome!
+-->
+
 ---
 transition: slide-up
 layout: center
 ---
 
 # The rest is history!
+
+<!--
+And the rest – is history.
+
+Of course, that was two years ago, and there are many other things I could talk about if I had the time.
+-->
 
 ---
 transition: slide-up
