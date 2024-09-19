@@ -802,9 +802,13 @@ layout: center
 # The rest is history!
 
 <!--
-And the rest – is history.
+That was two years ago, and the rest – is history.
 
-Of course, that was two years ago, and there are many other things I could talk about if I had the time.
+A lot of other things have happened since, but what I've shown you so far is enough to give you the idea. I haven't even mentioned the effect of all this on the people around me. My family's financial situation pretty much turned upside down. We were struggling to keep our feet up, and COVID made it even worse. But now it almost seems like a bad dream. All thanks to Django.
+
+It started with me learning Django, and the rest didn't happen overnight. It's a snowball that keeps on rolling, and I have been very lucky to have all the opportunities. It's a privilege.
+
+And so, I'd like to thank the biggest factor that made it all possible.
 -->
 
 ---
@@ -828,6 +832,21 @@ None of this would've been possible without the awesome Django community.
 
 </v-clicks>
 
+<!--
+Community.
+
+None of this. None of this would've been possible without the Django community.
+
+- The Django Fellows. Carlton, Mariusz, Tim, all the previous ones. And now we have Natalia and Sarah. They're absolute legends.
+- django-developers. That's the name of the mailing list we used for people who contribute to the Django codebase. Discussing tickets, possible enhancements, reviewing PRs. Anyone can join.
+- django-users. People who use Django. On their jobs, their personal projects, anything. Without its users, Django would not flourish.
+- Django package maintainers. You write some code – it's useful, and you feel other people can benefit from it as well, so you publish it. Someone finds a way to improve it, you work together with them, and merge it in. In some cases, someone else improves your code and get it into Django core. Everyone gets it. Everyone wins.
+- ...
+- Django event organizers. I wouldn't be here without you folks. Thank you very much for running this event. It's no easy feat and I really appreciate it. These events keep the Django community alive in real life.
+- Django event attendees. Everybody you see today, tomorrow, and the next few days plays a part in this. Without you, this event would be meaningless.
+- And you! Whoever is watching this – right now in this room, or virtually from your own bedroom, or later on YouTube. If you're watching this, you play a part in keeping Django alive.
+-->
+
 ---
 transition: slide-up
 layout: center
@@ -835,6 +854,11 @@ layout: center
 
 # How do we keep this going?
 
+<!--
+I want Django to have such an effect on many many other people. For me to just be one example. One example out of many other people from all around the world.
+
+So how do we keep this going?
+-->
 
 ---
 transition: none
@@ -844,6 +868,15 @@ transition: none
 
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-2024.png" />
 
+<!--
+This year, Django still participated in GSoC. We had four projects this year, compared to two projects when I did mine in 2019. Different projects with different mentors and different areas of Django to improve on.
+
+Google has removed the requirement for participants to be university students, so even more people can join.
+
+And anybody in the community can take part. You can suggest project ideas. You can write a proposal and work on the project. If you feel like it, you can also be a mentor.
+
+This year, I mentored a project that adds support for updating JSONFields on the database level. It's like an SQL – sorry, a sequel – to my project. Five years later, it's very interesting to see how much of the code has changed, and how much has stayed the same.
+-->
 
 ---
 transition: none
@@ -853,6 +886,14 @@ transition: none
 
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/outreachy.jpg" />
 
+<!--
+There is also Outreachy. It's a similar program to GSoC, but it's aimed towards supporting diversity. These days, I see a lot of toxic people on the internet discrediting the work of someone from an underrepresented background by calling them a "DEI hire" – which is just infuriating.
+
+Wagtail has participated in Outreachy a few times, and I can tell you that our interns are some of the coolest people I've ever worked with. And it is really amazing what they can do with all their limitations. I think they can put a lot of privileged people to shame.
+
+While Django has not participated in Outreachy so far, I think it's something we should look into in the future.
+-->
+
 ---
 transition: slide-up
 ---
@@ -861,12 +902,26 @@ transition: slide-up
 
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/djangonautspace.png" />
 
+<!--
+And we also have our own Djangonaut Space, a mentorship program for people who want to get into contributing to Django.
+
+I think this is one of, if not the best initiative for Django ever. Maybe even in open source.
+
+If you're interested, check out djangonaut.space, and there's also a talk about it [INSERT TALK HERE].
+-->
+
 ---
 transition: slide-up
 layout: center
 ---
 
 # Keeping Django alive
+
+<!--
+Those were some of the programs we can take part in, to bring new contributors to our community.
+
+But apart from that, there are things that we can do to keep Django alive.
+-->
 
 ---
 transition: none
@@ -876,6 +931,10 @@ transition: none
 
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/django-contributors.png" />
 
+<!--
+One of the most obvious is to make PRs to Django. Submit bug fixes, enhancements, documentation improvements. Sure, it is not the easiest thing – but it is very, very rewarding. Seeing that purple merge icon on GitHub, and your name in the contributors list. It's one of the best feelings ever.
+-->
+
 ---
 transition: none
 ---
@@ -884,6 +943,16 @@ transition: none
 
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/django-review.png" />
 
+<!--
+Aside from making PRs, you can also review them!
+
+Reviews can come from anyone – it doesn't have to be the Django Fellows. It doesn't have to be Natalia or Sarah.
+
+You don't have to know the entire Django codebase to review PRs. With how big Django is, I don't think anyone does. But if you use Django enough, you'll be familiar with where things go.
+
+And remember – these PRs will eventually become the things you use out of Django. Reviewing PRs from the perspective of a user really helps shape the APIs to be as friendly as they can be. So go out there and start digging.
+-->
+
 ---
 transition: none
 ---
@@ -891,6 +960,14 @@ transition: none
 # Create tickets
 
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/django-trac.png" />
+
+<!--
+And if you use Django enough, you'll encounter moments where you wish Django can do better. Maybe you find a bug, a potential feature, or a paragraph in the documentation you wish were there.
+
+Write a ticket. Explain the situation and how you think it can be improved. Maybe others feel the same way, or maybe nobody had thought about it. Then maybe someone else works on it and get a PR merged into Django, giving you what you want – without you writing a single line of code.
+
+Or maybe it gets rejected – but it's okay, we have disagreements from time to time. You can bring it up on the forums and maybe we change our minds. Here's a fun fact: the ticket for JSONField in Django was initially rejected. So, if your idea gets rejected, do not be discouraged.
+-->
 
 ---
 transition: none
