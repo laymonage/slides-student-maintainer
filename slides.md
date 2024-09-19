@@ -973,17 +973,29 @@ Or maybe it gets rejected – but it's okay, we have disagreements from time to 
 transition: none
 ---
 
-# Test against Django's main
+# Publish packages
 
-<img alt="" class="rounded-md w-3xl mx-auto mb-4" src="/django-cimain.png" />
+<img alt="" class="rounded-md w-lg mx-auto mb-4" src="/django-packages.png" />
+
+<!--
+Publish packages.
+
+Django has batteries included, but the superchargers are sold separately. For a good reason.
+
+The JSONField we now have in core wouldn't be possible without the existing packages we had in the ecosystem.
+
+And while we talk about packages, I'd like to give a shoutout to Jeff Triplett and others who have been keeping djangopackages.org alive.
+
+With how many packages there are out there, discoverability is a problem and this website can help solve that.
+-->
 
 ---
 transition: none
 ---
 
-# Publish packages
+# Test against Django's main
 
-<img alt="" class="rounded-md w-lg mx-auto mb-4" src="/django-packages.png" />
+<img alt="" class="rounded-md w-3xl mx-auto mb-4" src="/django-cimain.png" />
 
 ---
 transition: none
