@@ -65,7 +65,7 @@ I'm from Indonesia.
 
 Now I work at Torchbox in the UK to maintain and develop Wagtail CMS, an open source content-management system built on top of Django.
 
-Back in 2019 I did Google Summer of Code (or GSOC) with Django as student, and this year, I was a mentor.
+Back in 2019 I did Google Summer of Code (or GSOC) with Django as a student, and this year, I was a mentor.
 -->
 
 ---
@@ -114,6 +114,8 @@ This is a screenshot of the online learning platform where the resources were po
 !!!
 
 The course used Django to teach server-side web programming. They previously used PHP but they updated the curriculum to use Django the previous year, along with the switch to Python for the basic programming course.
+
+And yes, this is a screenshot of a slide within a slide.
 -->
 
 ---
@@ -199,17 +201,19 @@ I used – or I guess abused – sessions. You can use it as a dictionary and ev
 
 Well, almost. Using sessions would mean that the data will be lost when the user logs out. How can I keep the data then?
 
-!!!
-
-I looked it up, and saw that Django has a JSONField for this purpose, but it was only available for Postgres. We did use Postgres on Heroku for the deployed website, but we also used SQLite for local development. JSONField was not an option for me.
-
-So, I was like. Okay, how hard is it to have my own JSONField? If I can transform the dictionary into a string, I can save it to a TextField. Then, I just need some way to parse it back into a dictionary. And that's...
+I looked it up, and saw that Django has a
 
 !!!
 
-what I did! I just used Python's built-in JSON library to serialize and deserialize the data, then I can save the data in a TextField.
+JSONField that lets you store dictionaries and lists! But – it was only available for Postgres. We did use Postgres on Heroku for the deployed website, but we also used SQLite for local development. JSONField was not an option for me.
 
-That being said, please don't try this at home!
+So, I was like. Okay, how hard is it to have my own JSONField? If I can transform the dictionary into a string, I can save it to a TextField. Then, I just need some way to parse the string back into a dictionary. And that's...
+
+!!!
+
+what I did! I just used Python's built-in JSON library to serialize and deserialize the data, then I can save it in a TextField.
+
+That being said, I know that if I were to do this today, I would just use a dedicated model with ForeignKey to store the saved books – but hey, I was just a student back then.
 -->
 
 ---
@@ -219,7 +223,7 @@ layout: center
 # A few months later...
 
 <!--
-I finished my web development course by the end of 2018.
+After all that, I finished my web development course by the end of 2018.
 
 A few months later...
 -->
