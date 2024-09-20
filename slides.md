@@ -986,7 +986,7 @@ The JSONField we now have in core wouldn't be possible without the existing pack
 
 And while we talk about packages, I'd like to give a shoutout to Jeff Triplett and others who have been keeping djangopackages.org alive.
 
-With how many packages there are out there, discoverability is a problem and this website can help solve that.
+With how many packages there are out there, discoverability is a problem – and this website can help solve that.
 -->
 
 ---
@@ -997,6 +997,20 @@ transition: none
 
 <img alt="" class="rounded-md w-3xl mx-auto mb-4" src="/django-cimain.png" />
 
+<!--
+Okay, this is an easy one.
+
+If you haven't already, add an extra setup in your CI matrix to test your project against Django's `main` branch. Whether your project is a Django package, or an actual Django project. Test against Django's main.
+
+This helps catch bugs and compatibility issues early. And this applies to both sides. You'll find out whether your project works with the bleeding edge version of Django and you can anticipate any API changes much quicker.
+
+If all is well, you're going to have more confidence in upgrading to the final release when it comes out.
+
+In some rare cases, you'll find that it's actually a regression in Django. Which is actually great, because if you report that and it gets fixed, you'll save other people from having the same trouble.
+
+We do this with Wagtail, and there have been a few times where we noticed some regressions and we reported and/or submitted the fix. Everyone wins.
+-->
+
 ---
 transition: none
 ---
@@ -1005,6 +1019,12 @@ transition: none
 
 <img alt="" class="rounded-md w-lg mx-auto mb-4" src="/django-donate.png" />
 
+<!--
+If you've got some money but not the time to do any of the previous stuff, here's an easy one.
+
+Maintaining Django costs money. The DSF pays out the Django Fellows, and that money comes from donations. So, make a donation.
+-->
+
 ---
 transition: none
 ---
@@ -1012,6 +1032,10 @@ transition: none
 # Donate
 
 <img alt="" class="rounded-md w-4xl mx-auto mb-4" src="/django-sponsors.png" />
+
+<!--
+You can also do it via GitHub Sponsors, if that's more convenient.
+-->
 
 ---
 transition: none
