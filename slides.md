@@ -1045,6 +1045,14 @@ transition: none
 
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/django-events.png" />
 
+<!--
+And as I said before, participate in events, just like this!
+
+Thank you everybody for being here. It's part of what keeps Django alive.
+
+And if you want to take it a step further...
+-->
+
 ---
 transition: none
 ---
@@ -1052,6 +1060,16 @@ transition: none
 # Participate in events
 
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/djceu-coc.jpg" />
+
+<!--
+You can help organize the events!
+
+Last year I volunteered to be in the Code of Conduct team for DjangoCon Europe. Events like this won't be possible without the hard work by the organizers – so again, thank you for this wonderful event.
+
+There's plenty of opportunities to volunteer, so if you're interested, just ask the organizers.
+
+And when you return home from DjangoCon this week...
+-->
 
 ---
 transition: none
@@ -1061,6 +1079,30 @@ transition: none
 
 <img alt="" class="rounded-md w-4xl mx-auto mb-4" src="/django-meetup.png" />
 
+<!--
+Consider joining your local Django meetups.
+
+In the UK, there's the Django London meetup group that gathers every month. It's a great group of people with a warm atmosphere, I've been to quite a few times and I can highly recommend it if you're in the UK.
+
+And since we're in Durham...
+-->
+
+---
+transition: slide-up
+---
+
+# Join meetups
+
+<img alt="" class="rounded-md w-2xl mx-auto mb-4" src="/django-social-raleighdurham.png" />
+
+<!--
+There's also the DjangoSocial group here in Durham. It's a group where you can do social activities with other people from the Django community.
+
+It's part of the larger DjangoSocial network. If you're interested you can go to django.social or talk to Jon Gould and the folks from Foxley Talent.
+
+Okay, and finally...
+-->
+
 ---
 transition: slide-up
 ---
@@ -1069,7 +1111,17 @@ transition: slide-up
 
 <img alt="" class="rounded-md w-4xl mx-auto mb-4" src="/django-use.png" />
 
+<!--
+Just use it. Use Django.
 
+This is a screenshot of Django's usage statistics on GitHub.
+
+I don't know what happened here when I took it, but this was not edited. I think there must've been a bug on GitHub because that's a _lot_ of cats.
+
+Anyway. One of the reasons why my uni teaches Django is because it's widely used in the industry. I If nobody uses Django – I wouldn't be here today.
+
+And, that's it from me.
+-->
 
 ---
 layout: center
@@ -1078,3 +1130,7 @@ layout: center
 # Thank you!
 
 [slides.laymonage.com/django-life](https://slides.laymonage.com/django-life)
+
+<!--
+Thank you!
+-->
