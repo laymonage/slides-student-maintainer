@@ -63,7 +63,7 @@ This is a slide about me, but I think it works just as well as an outline for th
 
 I'm from Indonesia.
 
-Now I work at Torchbox in the UK to maintain and develop Wagtail CMS, an open source content-management system built on top of Django.
+These days I work at Torchbox in the UK to maintain and develop Wagtail CMS, an open source content-management system built on top of Django.
 
 Back in 2019 I did Google Summer of Code (or GSOC) with Django as a student, and this year, I was a mentor.
 -->
@@ -86,7 +86,11 @@ I think it's safe to say that we all know Django's tagline:
 
 Which, as far as I know, looking at the web archive, it's been there since the start in July 2005.
 
-But to me, Django is the web framework that changed my life.
+But to me, Django is the web framework
+
+!!!
+
+that changed my life.
 
 And let me tell you why.
 -->
@@ -193,7 +197,7 @@ Anyway, we were given new assignments every week. At one point we learned about 
 
 To store the "favorite books" data, I could technically just have a model with the book ID and use a ForeignKey to the user. But at the time, I thought having one model instance for each book you saved is a bit overkill, especially when the books data came from a third-party service – in this case Google.
 
-So what did I do?
+So what did I do instead?
 
 !!!
 
@@ -276,7 +280,7 @@ I already knew about GSoC at that point, and since I've learned a bit of Django,
 
 Notice how it says **in no particular order**. Well it just so happened that the first item on the list was:
 
-**A cross-DB JSONField!**
+**A cross-database JSONField!**
 
 That was... _basically_ the **exact** thing I hacked together in my project.
 
@@ -315,7 +319,7 @@ transition: slide-up
 <!--
 The thing with GSoC is that if you wanted to get in, you have to realize there are other students like yourself. So, you need to convince the mentors that you are the right person for the job. You have to stand out among other applicants. It's just like job hunting.
 
-So, before I started working on my proposal, I concocted a plan. I wanted to get at least one PR to Django merged – but hopefully more than just one.
+So, before I started working on my proposal, I concocted a plan. I wanted to get at least one pull request (PR) to Django merged – but hopefully more than just one.
 
 I started looking into the contribution guide, and I
 
@@ -329,11 +333,11 @@ Eventually I was able to land my first PR to Django – after some back and fort
 
 I learned a lot from this PR and it was a great experience. You get the general feeling and the common practices on how to make changes to the codebase.
 
-Because you need to demonstrate that you are willing to learn. You are able to follow the instructions, and you are **patient**. Which may sound trivial, but it is actually a big deal in open source. Speaking from experience, there are people who rush to get things done and their PR merged, and not following instructions from the maintainers. That is not a good outlook.
+This is important, since you need to demonstrate that you are willing to learn. You are able to follow the instructions, and you are **patient**. Which may sound trivial, but it is actually a big deal in open source. Speaking from experience, there are people who rush to get things done and want their PR merged, but they don't follow the instructions from the maintainers. That is not a good outlook.
 
 !!!
 
-Then I got two more PRs merged, one of which was for a ticket that I wrote myself. All of these are basically just one-liners, but they cover different aspects: implementation, tests, and documentation.
+Anyway, then I got two more PRs merged, one of which was for a ticket that I wrote myself. All of these are basically just one-liners, but they cover different aspects: implementation, tests, and documentation.
 
 Now that I have three PRs, I got started with my proposal.
 -->
@@ -507,7 +511,7 @@ Obviously, we already had the Postgres JSONField at the time, which worked wonde
 - We had an oracle-json-field package for Oracle, and
 - We also have django-jsonfallback that would use the built-in Postgres and django-mysql's JSONFields before falling back to a TextField on others.
 
-and many, many other packages... some of which predated the built-in Postgres JSONField.
+and many, many other packages... some of which even predated the built-in Postgres JSONField.
 -->
 
 ---
@@ -608,8 +612,9 @@ transition: slide-up
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/djangochat.png" />
 
 <!--
-Then I was invited by Carlton and Will Vincent to the DjangoChat podcast. If you didn't know already – give it a listen, it's great.
-This was my first ever podcast. And still my only one so far – hint hint?
+Then I was invited by Carlton and Will Vincent to the DjangoChat podcast. If you didn't know about DjangoChat already – give it a listen.
+
+This was my first ever podcast. And still my only one so far. (hint hint?)
 
 I was very nervous. I could've done better, but it's out there now, so if you do listen to it, please keep that in mind.
 -->
@@ -757,6 +762,8 @@ And do you know what one of the first things I did on the job was?
 
 Well, Wagtail had their own version of JSONField that used the TextField approach. Around that time, it happened that Wagtail was about to bump its minimum Django version to 3.2, which includes the new JSONField.
 
+!!!
+
 So naturally, I was tasked to migrate all these existing text-based "JSONField"s into real JSONFields.
 
 Then I did a talk about it at Wagtail Space US, which is Wagtail's own conference. But I did it virtually because I was still in Indonesia.
@@ -808,7 +815,7 @@ layout: center
 <!--
 That was two years ago, and the rest – is history.
 
-A lot of other things have happened since, but what I've shown you so far is enough to give you the idea. I haven't even mentioned the effect of all this on the people around me. My family's financial situation pretty much turned upside down. We were struggling to keep our feet up, and COVID made it even worse. But now it almost seems like a bad dream. All thanks to Django.
+A lot of other things have happened since, but what I've shown you so far is enough to give you the idea. I haven't even mentioned the effect of all this on the people around me. My family's financial situation pretty much turned upside down. We were struggling to keep our feet up, and COVID made it even worse. But now it almost seems like it was just a bad dream. All thanks to Django.
 
 It started with me learning Django, and the rest didn't happen overnight. It's a snowball that keeps on rolling, and I have been very lucky to have all the opportunities. It's a privilege.
 
@@ -841,7 +848,7 @@ Community.
 
 None of this. None of this would've been possible without the Django community.
 
-- The Django Fellows. Carlton, Mariusz, Tim, all the previous ones. And now we have Natalia and Sarah. They're absolute legends.
+- The Django Fellows. Carlton, Mariusz, Tim, all the previous ones. Now we have Natalia and Sarah. They're absolute legends.
 - django-developers. That's the name of the mailing list we used for people who contribute to the Django codebase. Discussing tickets, possible enhancements, reviewing PRs. Anyone can join.
 - django-users. People who use Django. On their jobs, their personal projects, anything. Without its users, Django would not flourish.
 - Django package maintainers. You write some code – it's useful, and you feel other people can benefit from it as well, so you publish it. Someone finds a way to improve it, you work together with them, and merge it in. In some cases, someone else improves your code and get it into Django core. Everyone gets it. Everyone wins.
