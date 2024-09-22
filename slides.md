@@ -25,8 +25,6 @@ mdc: true
 
 <!--
 Halo!
-
-That's not halo, it's _halo_. That's how you say "hello" in Indonesian.
 -->
 
 ---
@@ -565,6 +563,8 @@ You can see how many people reviewed the PR. On the right side there.
 
 I have blurred the number of comments on the PR. Would anybody like to take a guess on how many comments we have here?
 
+Fifty? A hundred? Two hundred?
+
 !!!
 
 There were 321 comments. This was just the initial PR that I kept on iterating.
@@ -661,8 +661,6 @@ However, I did get lucky.
 I have some friends who worked at an agency – they use Django. And one of them noticed my JSONField project from the DjangoChat podcast.
 
 I applied for an internship with them, and I got it. Thanks to Django!
-
-My friend sent me this screenshot back in 2020. I'm so glad I've been keeping these "receipts" so I can use them for my talk.
 -->
 
 ---
@@ -729,7 +727,7 @@ This!
 
 A job listing for a Wagtail Developer.
 
-The role is to work on Wagtail itself, an open-source content management system built on top of Django.
+The job is to work on Wagtail itself. And doing open source as a full-time job was my dream.
 
 I looked at the requirements, and I think I pretty much ticked all the boxes, so I sent my application.
 
@@ -826,7 +824,7 @@ Community.
 None of this. None of this would've been possible without the Django community.
 
 - The Django Fellows, all the past and present fellows. They're absolute legends.
-- Other contributors, who discuss tickets, possible enhancements, triaging tickets, reviewing PRs.
+- Other contributors, who discuss and triage tickets, reviewing PRs.
 - Django package maintainers.
 - Django users.
 - Django event organizers. Attendees.
@@ -857,9 +855,9 @@ transition: none
 <!--
 This year, Django still participated in GSoC. We had four projects this year, compared to two projects when I did mine in 2019. Different projects with different mentors and different areas of Django to improve.
 
-Google has removed the requirement for participants to be university students, so even more people can join.
+You no longer have to be a university student to join.
 
-And anybody in the community can take part. You can suggest project ideas. You can write a proposal and work on the project. If you feel like it, you can also be a mentor.
+And anybody in the community can take part in other ways. You can suggest project ideas. If you feel like it, you can also be a mentor.
 
 This year, I mentored a project that adds support for updating JSONFields on the database level. It's like an SQL – sorry, a sequel – to my project. Five years later, it's very interesting to see how much of the code has changed, and how much has stayed the same.
 -->
@@ -971,10 +969,6 @@ Django has batteries included, but the superchargers are sold separately. For a 
 The JSONField we now have in core wouldn't be possible without the existing packages we had in the ecosystem.
 
 So if you're a Django package maintainer, I thank you.
-
-I'd also like to give a shoutout to Jeff Triplett and others who have been keeping djangopackages.org alive.
-
-With how many packages out there, discoverability is a problem – and this website can help solve that.
 -->
 
 ---
@@ -1005,7 +999,10 @@ transition: none
 
 # Donate
 
-<img alt="" class="rounded-md w-lg mx-auto mb-4" src="/django-donate.png" />
+<div class="relative">
+  <img alt="" class="rounded-md absolute w-lg mx-auto mb-4" src="/django-donate.png" />
+  <img alt="" class="rounded-md absolute right-0 top-36 w-sm mx-auto mb-4" src="/django-sponsors.png" />
+</div>
 
 <!--
 If you've got some extra money but not the time to do any of the previous stuff, here's an easy one.
@@ -1017,26 +1014,12 @@ Maintaining Django costs money. The DSF pays out the Django Fellows, and that mo
 transition: none
 ---
 
-# Donate
-
-<img alt="" class="rounded-md w-4xl mx-auto mb-4" src="/django-sponsors.png" />
-
-<!--
-You can also do it via GitHub Sponsors, if that's more convenient.
--->
-
----
-transition: none
----
-
 # Participate in events
 
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/django-events.png" />
 
 <!--
-And as I said before, participate in events, just like this!
-
-Thank you everybody for being here. It's part of what keeps Django alive.
+And participate in events, just like this!
 
 And if you want to take it a step further...
 -->
@@ -1052,11 +1035,13 @@ transition: none
 <!--
 You can help organize the events!
 
-Last year I volunteered to be in the Code of Conduct team for DjangoCon Europe. Events like this won't be possible without the hard work by the organizers – so again, thank you for this wonderful event.
+Last year I volunteered to be in the Code of Conduct team for DjangoCon Europe. Events like this wouldn't be possible without the hard work by the organizers.
 
 There's plenty of opportunities to volunteer, so if you're interested, just ask the organizers.
 
 And when you return home from DjangoCon this week, check out your local Django meetups. In the UK, we have a Django meetup in London, and there are also the DjangoSocial groups in other places, including here in Durham.
+
+And finally...
 -->
 
 ---
@@ -1072,9 +1057,9 @@ Just use it. Use Django.
 
 This is a screenshot of Django's usage statistics on GitHub.
 
-I don't know what happened here when I took it, but this was not edited. I think there must've been a bug on GitHub because that's a _lot_ of cats.
+I don't know what happened here when I took it, but this was not edited. I think there must've been a bug on GitHub because that's a _lot_ of cats. Do we have any cats in the room?
 
-Anyway. One of the reasons why my uni teaches Django is because it's widely used in the industry. If nobody uses Django – I wouldn't be here today.
+Anyway. One of the reasons why my uni teaches Django is because it's widely used in the industry. If nobody used Django – I wouldn't be here today.
 
 So, use Django. And that's it from me.
 -->
