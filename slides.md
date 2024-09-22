@@ -495,8 +495,8 @@ I was standing on the shoulders of giants.
 Obviously, we already had the Postgres JSONField at the time, which worked wonders. But we also had external packages that implemented JSONField for other database backends too.
 
 - We had it in Django-MySQL, and
-- We had an oracle-json-field package for Oracle, and
-- We also have django-jsonfallback that would use the built-in Postgres and django-mysql's JSONFields before falling back to a TextField on others.
+- We had one for Oracle, and
+- We also had django-jsonfallback that combined the built-in Postgres and django-mysql's JSONFields before falling back to a TextField on others.
 
 and many, many other packages... some of which even predated the built-in Postgres JSONField.
 -->
@@ -804,7 +804,7 @@ That was two years ago, and the rest – is history.
 
 A lot of other things have happened since, but what I've shown you so far is enough to give you the idea.
 
-But that's not to mention the effect of all this on the people around me. My family's financial situation pretty much turned upside down. We were struggling to keep our feet up, and COVID made it even worse. But now it almost seems like it was just a bad dream. All thanks to Django.
+But that's not to mention the effect of all this on the people around me. My family's financial situation pretty much had a complete turnaround. We were struggling to keep our feet up, and COVID made it even worse. But now it almost seems like it was just a bad dream. All thanks to Django.
 
 It started with me learning Django, and the rest didn't happen overnight. It's a snowball that keeps on rolling, and I have been very lucky to have all the opportunities. It's a privilege.
 
@@ -1021,21 +1021,7 @@ transition: none
 <!--
 And participate in events, just like this!
 
-And if you want to take it a step further...
--->
-
----
-transition: none
----
-
-# Participate in events
-
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/djceu-coc.jpg" />
-
-<!--
-You can help organize the events!
-
-Last year I volunteered to be in the Code of Conduct team for DjangoCon Europe. Events like this wouldn't be possible without the hard work by the organizers.
+And if you want to take it a step further, you can help organize the events.
 
 There's plenty of opportunities to volunteer, so if you're interested, just ask the organizers.
 
