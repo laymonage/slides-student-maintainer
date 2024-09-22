@@ -55,7 +55,7 @@ transition: fade-out
 <!--
 Thank you everybody for coming, and thanks to all the organizers for such a wonderful event. I'm so grateful to be here again.
 
-I'm Sage Abdullah, you can find me online @laymonage on GitHub, Fosstodon, _even_ Steam.
+I'm Sage Abdullah, you can find me online @laymonage on GitHub, Fosstodon, and other places.
 
 First of all, I was in two minds about doing this talk, because usually I do more technical kind of talks. I was afraid that this was going to be Sage talking about himself on the stage and I couldn't gauge whether people would want to engage – but, I'll try.
 
@@ -84,9 +84,9 @@ I think it's safe to say that we all know Django's tagline:
 
 "The web framework for perfectionists with deadlines."
 
-Which, as far as I know, looking at the web archive, it's been there since the start in July 2005.
+I don't know who came up with it, but it's catchy. I looked at the web archive and it's been there since the first snapshot in July 2005. I hope Frank is going to tell us about this in his talk on Wednesday.
 
-But to me, Django is the web framework
+Anyway, but to me, Django is the web framework
 
 !!!
 
@@ -102,24 +102,17 @@ transition: slide-up
 # How it started...
 
 <v-switch>
-  <template #0><img class="rounded-md h-xs mx-auto mb-4" src="/ppw-scele.png" /></template>
-  <template #2><img class="rounded-md h-xs mx-auto mb-4" src="/ppw-slides.png" /></template>
+  <template #0><img class="rounded-md h-xs mx-auto mb-4" src="/ppw-slides.png" /></template>
 </v-switch>
 
-<v-click at="1"> A web design & programming course at university </v-click>
+A web design & programming course at university
 
 <!--
-So I first learned Django during my second year of uni back in 2018 as part of a web design and programming course.
+So I first learned Django during my second year of uni back in 2018 as part of the web programming course.
 
-!!!
+They previously used PHP, but the previous year they updated the curriculum to teach Python for the basics, so it makes sense to use Django for the web.
 
-This is a screenshot of the online learning platform where the resources were posted.
-
-!!!
-
-The course used Django to teach server-side web programming. They previously used PHP but they updated the curriculum to use Django the previous year, along with the switch to Python for the basic programming course.
-
-And yes, this is a screenshot of a slide within a slide.
+And yes, it's a screenshot of a slide within a slide.
 -->
 
 ---
@@ -138,19 +131,15 @@ def my_books(request):
     return JsonResponse({"books": request.session['books']})
 
 def favorite(request):
-    book_id = request.POST.get('book_id', '')
-    if not book_id:
-        return JsonResponse({'success': False})
-    if book_id not in request.session['books']:
+    book_id = request.POST.get('book_id')
+    if book_id and book_id not in request.session['books']:
         request.session['books'].append(book_id)
         request.session.modified = True
     return JsonResponse({'success': True})
 
 def unfavorite(request):
-    book_id = request.POST.get('book_id', '')
-    if not book_id:
-        return JsonResponse({'success': False})
-    if book_id in request.session['books']:
+    book_id = request.POST.get('book_id')
+    if book_id and book_id in request.session['books']:
         request.session['books'].remove(book_id)
         request.session.modified = True
     return JsonResponse({'success': True})
@@ -815,7 +804,9 @@ layout: center
 <!--
 That was two years ago, and the rest – is history.
 
-A lot of other things have happened since, but what I've shown you so far is enough to give you the idea. I haven't even mentioned the effect of all this on the people around me. My family's financial situation pretty much turned upside down. We were struggling to keep our feet up, and COVID made it even worse. But now it almost seems like it was just a bad dream. All thanks to Django.
+A lot of other things have happened since, but what I've shown you so far is enough to give you the idea.
+
+But that's not to mention the effect of all this on the people around me. My family's financial situation pretty much turned upside down. We were struggling to keep our feet up, and COVID made it even worse. But now it almost seems like it was just a bad dream. All thanks to Django.
 
 It started with me learning Django, and the rest didn't happen overnight. It's a snowball that keeps on rolling, and I have been very lucky to have all the opportunities. It's a privilege.
 
@@ -824,37 +815,21 @@ And so, I'd like to thank the biggest factor that made it all possible.
 
 ---
 transition: slide-up
+layout: center
 ---
 
 # Community
-
-None of this would've been possible without the awesome Django community.
-
-<v-clicks>
-
-- Django Fellows
-- django-developers
-- django-users
-- Django package maintainers
-- Django Software Foundation members
-- Django event organizers
-- Django event attendees
-- You!
-
-</v-clicks>
 
 <!--
 Community.
 
 None of this. None of this would've been possible without the Django community.
 
-- The Django Fellows. Carlton, Mariusz, Tim, all the previous ones. Now we have Natalia and Sarah. They're absolute legends.
-- django-developers. That's the name of the mailing list we used for people who contribute to the Django codebase. Discussing tickets, possible enhancements, reviewing PRs. Anyone can join.
-- django-users. People who use Django. On their jobs, their personal projects, anything. Without its users, Django would not flourish.
-- Django package maintainers. You write some code – it's useful, and you feel other people can benefit from it as well, so you publish it. Someone finds a way to improve it, you work together with them, and merge it in. In some cases, someone else improves your code and get it into Django core. Everyone gets it. Everyone wins.
-- ...
-- Django event organizers. I wouldn't be here without you folks. Thank you very much for running this event. It's no easy feat and I really appreciate it. These events keep the Django community alive in real life.
-- Django event attendees. Everybody you see today, tomorrow, and the next few days plays a part in this. Without you, this event would be meaningless.
+- The Django Fellows, all the past and present fellows. They're absolute legends.
+- Other contributors, who discuss tickets, possible enhancements, triaging tickets, reviewing PRs.
+- Django package maintainers.
+- Django users.
+- Django event organizers. Attendees.
 - And you! Whoever is watching this – right now in this room, or virtually from your own bedroom, or later on YouTube. If you're watching this, you play a part in keeping Django alive.
 -->
 
@@ -880,7 +855,7 @@ transition: none
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-2024.png" />
 
 <!--
-This year, Django still participated in GSoC. We had four projects this year, compared to two projects when I did mine in 2019. Different projects with different mentors and different areas of Django to improve on.
+This year, Django still participated in GSoC. We had four projects this year, compared to two projects when I did mine in 2019. Different projects with different mentors and different areas of Django to improve.
 
 Google has removed the requirement for participants to be university students, so even more people can join.
 
@@ -900,7 +875,7 @@ transition: none
 <!--
 There is also Outreachy. It's a similar program to GSoC, but it's aimed towards supporting diversity. These days, I see a lot of toxic people on the internet discrediting the work of someone from an underrepresented background by calling them a "DEI hire" – which is just infuriating.
 
-Wagtail has participated in Outreachy a few times, and I can tell you that our interns are some of the coolest people I've ever worked with. And it is really amazing what they can do with all their limitations. I think they can put a lot of privileged people to shame.
+Wagtail has participated in Outreachy a few times, and I can tell you that our interns are some of the coolest people I've ever worked with. And it is really amazing what they can do with all their limitations.
 
 While Django has not participated in Outreachy so far, I think it's something we should look into in the future.
 -->
@@ -918,7 +893,7 @@ And we also have our own Djangonaut Space, a mentorship program for people who w
 
 I think this is one of, if not the best initiative for Django ever. Maybe even in open source.
 
-If you're interested, check out djangonaut.space, and there's also a talk about it [INSERT TALK HERE].
+If you're interested, check out djangonaut.space. There's a panel discussion on Wednesday about Django mentorship, so we can hear more about it. There's also a talk about Djangonaut Space by Dawn and Rachell from last year's DjangoCon US and I highly recommend checking it out.
 -->
 
 ---
@@ -931,7 +906,7 @@ layout: center
 <!--
 Those were some of the programs we can take part in, to bring new contributors to our community.
 
-But apart from that, there are things that we can do to keep Django alive.
+And there are things we can do –as a community– to keep Django alive.
 -->
 
 ---
@@ -957,7 +932,7 @@ transition: none
 <!--
 Aside from making PRs, you can also review them!
 
-Reviews can come from anyone – it doesn't have to be the Django Fellows. It doesn't have to be Natalia or Sarah.
+Reviews can come from anyone – it doesn't have to be the Django Fellows. It's not only Natalia and Sarah who can do reviews – you can too. The fellows will take care of the merging later.
 
 You don't have to know the entire Django codebase to review PRs. With how big Django is, I don't think anyone does. But if you use Django enough, you'll be familiar with where things go.
 
@@ -995,9 +970,11 @@ Django has batteries included, but the superchargers are sold separately. For a 
 
 The JSONField we now have in core wouldn't be possible without the existing packages we had in the ecosystem.
 
-And while we talk about packages, I'd like to give a shoutout to Jeff Triplett and others who have been keeping djangopackages.org alive.
+So if you're a Django package maintainer, I thank you.
 
-With how many packages there are out there, discoverability is a problem – and this website can help solve that.
+I'd also like to give a shoutout to Jeff Triplett and others who have been keeping djangopackages.org alive.
+
+With how many packages out there, discoverability is a problem – and this website can help solve that.
 -->
 
 ---
@@ -1013,7 +990,7 @@ Okay, this is an easy one.
 
 If you haven't already, add an extra setup in your CI matrix to test your project against Django's `main` branch. Whether your project is a Django package, or an actual Django project. Test against Django's main.
 
-This helps catch bugs and compatibility issues early. And this applies to both sides. You'll find out whether your project works with the bleeding edge version of Django and you can anticipate any API changes much quicker.
+This helps catch bugs and compatibility issues early. And it applies to both sides. You'll find out whether your project works with the bleeding edge version of Django and you can anticipate any API changes much quicker.
 
 If all is well, you're going to have more confidence in upgrading to the final release when it comes out.
 
@@ -1031,7 +1008,7 @@ transition: none
 <img alt="" class="rounded-md w-lg mx-auto mb-4" src="/django-donate.png" />
 
 <!--
-If you've got some money but not the time to do any of the previous stuff, here's an easy one.
+If you've got some extra money but not the time to do any of the previous stuff, here's an easy one.
 
 Maintaining Django costs money. The DSF pays out the Django Fellows, and that money comes from donations. So, make a donation.
 -->
@@ -1079,39 +1056,7 @@ Last year I volunteered to be in the Code of Conduct team for DjangoCon Europe. 
 
 There's plenty of opportunities to volunteer, so if you're interested, just ask the organizers.
 
-And when you return home from DjangoCon this week...
--->
-
----
-transition: none
----
-
-# Join meetups
-
-<img alt="" class="rounded-md w-4xl mx-auto mb-4" src="/django-meetup.png" />
-
-<!--
-Consider joining your local Django meetups.
-
-In the UK, there's the Django London meetup group that gathers every month. It's a great group of people with a warm atmosphere, I've been to quite a few times and I can highly recommend it if you're in the UK.
-
-And since we're in Durham...
--->
-
----
-transition: slide-up
----
-
-# Join meetups
-
-<img alt="" class="rounded-md w-2xl mx-auto mb-4" src="/django-social-raleighdurham.png" />
-
-<!--
-There's also the DjangoSocial group here in Durham. It's a group where you can do social activities with other people from the Django community.
-
-It's part of the larger DjangoSocial network. If you're interested you can go to django.social or talk to Jon Gould and the folks from Foxley Talent.
-
-Okay, and finally...
+And when you return home from DjangoCon this week, check out your local Django meetups. In the UK, we have a Django meetup in London, and there are also the DjangoSocial groups in other places, including here in Durham.
 -->
 
 ---
@@ -1129,9 +1074,9 @@ This is a screenshot of Django's usage statistics on GitHub.
 
 I don't know what happened here when I took it, but this was not edited. I think there must've been a bug on GitHub because that's a _lot_ of cats.
 
-Anyway. One of the reasons why my uni teaches Django is because it's widely used in the industry. I If nobody uses Django – I wouldn't be here today.
+Anyway. One of the reasons why my uni teaches Django is because it's widely used in the industry. If nobody uses Django – I wouldn't be here today.
 
-And, that's it from me.
+So, use Django. And that's it from me.
 -->
 
 ---
