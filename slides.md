@@ -753,7 +753,7 @@ Well, Wagtail had their own version of JSONField that used the TextField approac
 
 So naturally, I was tasked to migrate all these existing text-based "JSONField"s into real JSONFields.
 
-Then I did a talk about it at Wagtail Space US, which is Wagtail's own conference. But I did it virtually because I was still in Indonesia.
+Then I gave a talk about it at Wagtail Space US, which is Wagtail's own conference. But I did it virtually because I was still in Indonesia.
 
 And then a few months later...
 -->
@@ -945,7 +945,7 @@ Reviews can come from anyone – it doesn't have to be the Django Fellows. It's 
 
 You don't have to know the entire Django codebase to review PRs. With how big Django is, I don't think anyone does. But if you use Django enough, you'll be familiar with where things go.
 
-And remember – these PRs will eventually become the things you use out of Django. Reviewing PRs from the perspective of a user really helps shape the APIs to be as friendly as they can be. So go out there and start digging.
+And remember – these PRs will eventually become the things you use as a Django user. Reviewing PRs from the perspective of a user really helps shape the APIs to be as friendly as they can be. So go out there and start reviewing.
 -->
 
 ---
