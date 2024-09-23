@@ -394,7 +394,7 @@ transition: slide-up
 </v-switch>
 
 <!--
-I got this!
+I got: this!
 
 My proposal was accepted. It was like 4:30 in the morning, and I got chills from reading this email.
 
@@ -492,9 +492,11 @@ I was standing on the shoulders of giants.
 
 Obviously, we already had the Postgres JSONField at the time, which worked wonders. But we also had external packages that implemented JSONField for other database backends too.
 
-- We had it in Django-MySQL,
-- We had one for Oracle, and
+- We had it in Django-MySQL !!!
+- We had one for Oracle, and !!!
 - We also had django-jsonfallback that combined the built-in Postgres and django-mysql's JSONFields before falling back to a TextField on others.
+
+!!!
 
 and many, many other packages... some of which even predated the built-in Postgres JSONField.
 -->
@@ -870,7 +872,9 @@ Also, anybody in the community can take part in other ways. You can suggest proj
 
 !!!
 
-This year, I mentored a project that adds support for updating JSONFields on the database level. It's like an SQL – sorry, a sequel – to my project. Five years later, it's very interesting to see how much of the code has changed, and how much has stayed the same.
+This year, I mentored a project that adds support for updating JSONFields on the database level. It's like an SQL – sorry, a sequel – to my project. It has come full circle.
+
+Five years later, it's very interesting to see how much of the code has changed, and how much has stayed the same.
 -->
 
 ---
@@ -968,12 +972,12 @@ Or maybe it gets rejected – but it's okay, we have disagreements from time to 
 transition: none
 ---
 
-# Publish packages
+# Maintain packages
 
 <img alt="" class="rounded-md w-lg mx-auto mb-4" src="/django-packages.png" />
 
 <!--
-Publish packages.
+Maintain packages.
 
 Django has batteries included, but the superchargers are sold separately. For a good reason.
 
@@ -995,9 +999,9 @@ Okay, this is an easy one.
 
 If you haven't already, add an extra setup in your CI matrix to test your project against Django's `main` branch. Whether your project is a Django package, or an actual Django project. Test against Django's main.
 
-This helps catch bugs and compatibility issues early. And it applies to both sides. You'll find out whether your project works with the bleeding edge version of Django and you can anticipate any API changes much quicker.
+This helps catch bugs and compatibility issues early. And it applies to both sides. You can anticipate any API changes much quicker.
 
-If all is well, you're going to have more confidence in upgrading to the final release when it comes out.
+If all is well, you're going to be more confident in upgrading to the final release when it comes out.
 
 In some rare cases, it might turn out to be a regression in Django. Which is actually great, because if you report that and it gets fixed, you'll save other people from having the same trouble.
 
