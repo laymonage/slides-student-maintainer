@@ -55,6 +55,8 @@ Thank you everybody for coming, and thanks to all the organizers for such a wond
 
 I'm Sage Abdullah, you can find me online @laymonage on GitHub, Fosstodon, and other places.
 
+First of all, I was in two minds about doing this talk. I was afraid that this was going to be Sage talking about Sage on the stage and I couldn't gauge whether people would want to engage – but, I'll try.
+
 I'm from Indonesia.
 
 These days I work at Torchbox in the UK to maintain and develop Wagtail CMS, an open source content-management system built on top of Django.
