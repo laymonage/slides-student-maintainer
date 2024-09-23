@@ -588,6 +588,8 @@ Then a few months later, in August of 2020, Django 3.1 was finally released – 
 So it took a little over a year from when I submitted the initial PR to the day it was released.
 
 But hey, we made it!
+
+Raise your hands if you've used `JSONField`. Thanks, glad you find it useful!
 -->
 
 ---
