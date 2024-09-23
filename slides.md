@@ -106,7 +106,7 @@ A web design & programming course at university
 <!--
 So, I first learned Django during my second year of uni back in 2018 as part of the web programming course.
 
-They previously used PHP, but the previous year they updated the curriculum to teach Python for the basics, so it makes sense to use Django for the web.
+It used to be PHP, but the previous year they updated the curriculum to teach Python for the basics, so it makes sense to use Django for the web.
 
 And yes, it's a screenshot of a slide within a slide.
 -->
