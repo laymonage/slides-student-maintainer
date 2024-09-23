@@ -55,10 +55,6 @@ Thank you everybody for coming, and thanks to all the organizers for such a wond
 
 I'm Sage Abdullah, you can find me online @laymonage on GitHub, Fosstodon, and other places.
 
-First of all, I was in two minds about doing this talk, because usually I do more technical kind of talks. I was afraid that this was going to be Sage talking about himself on the stage and I couldn't gauge whether people would want to engage – but, I'll try.
-
-This is a slide about me, but I think it works just as well as an outline for this talk.
-
 I'm from Indonesia.
 
 These days I work at Torchbox in the UK to maintain and develop Wagtail CMS, an open source content-management system built on top of Django.
@@ -106,7 +102,7 @@ transition: slide-up
 A web design & programming course at university
 
 <!--
-So I first learned Django during my second year of uni back in 2018 as part of the web programming course.
+So, I first learned Django during my second year of uni back in 2018 as part of the web programming course.
 
 They previously used PHP, but the previous year they updated the curriculum to teach Python for the basics, so it makes sense to use Django for the web.
 
@@ -178,7 +174,7 @@ def save_books_set(sender, user, request, **kwargs):
 <!--
 As part of the course we were tasked to build our own website.
 
-Which started out simple, with just a model or two, some views and templates, and we added more features throughout the course. By the way, I spun up this six year old project which used Django 2.1 and it still worked.
+Which started out simple, with just a model or two, some views and templates. And we added more features throughout the course. By the way, I spun up this six year old project which used Django 2.1 and it still worked.
 
 Anyway, we were given new assignments every week. At one point we learned about making AJAX requests from the browser to Google Books API. You can search for books and add them to your favorites.
 
@@ -362,7 +358,7 @@ It's not a perfect proposal by any means, but I put it together in between my mi
 
 !!!
 
-I posted it to the django-developers mailing list, got a few responses – see if you can spot some familiar names there.
+I posted it to the django-developers mailing list, got a few responses.
 
 I made a few tweaks based on the feedback.
 
@@ -494,7 +490,7 @@ I was standing on the shoulders of giants.
 
 Obviously, we already had the Postgres JSONField at the time, which worked wonders. But we also had external packages that implemented JSONField for other database backends too.
 
-- We had it in Django-MySQL, and
+- We had it in Django-MySQL,
 - We had one for Oracle, and
 - We also had django-jsonfallback that combined the built-in Postgres and django-mysql's JSONFields before falling back to a TextField on others.
 
@@ -727,13 +723,13 @@ This!
 
 A job listing for a Wagtail Developer.
 
-The job is to work on Wagtail itself. And doing open source as a full-time job was my dream.
+The job is to work on Wagtail the CMS. And doing open source as a full-time job was my dream.
 
 I looked at the requirements, and I think I pretty much ticked all the boxes, so I sent my application.
 
 Then I did a couple interviews and a coding task. I was interviewed by Tom Dyson, the CTO, and he knew about my JSONField stuff. A few days later, I got the job!
 
-They wanted me to move to the UK as soon as possible, but it was a surprise for me and my family. So I asked to work remotely for a few months while we sort out my visa and stuff.
+They wanted me to move to the UK as soon as possible, but it was such a surprise for me and my family. So I asked to work remotely for a few months while we sort out my visa and stuff.
 -->
 
 ---
@@ -804,9 +800,9 @@ That was two years ago, and the rest – is history.
 
 A lot of other things have happened since, but what I've shown you so far is enough to give you the idea.
 
-But that's not to mention the effect of all this on the people around me. My family's financial situation pretty much had a complete turnaround. We were struggling to keep our feet up, and COVID made it even worse. But now it almost seems like it was just a bad dream. All thanks to Django.
+But that's not to mention the effect of all this on the people around me as well. My family's financial situation pretty much had a complete turnaround. We were struggling to keep our feet up, and COVID made it even worse. But now it almost seems like it was just a bad dream. All thanks to Django.
 
-It started with me learning Django, and the rest didn't happen overnight. It's a snowball that keeps on rolling, and I have been very lucky to have all the opportunities. It's a privilege.
+It started with me learning Django, and the rest didn't happen overnight. It's a snowball that keeps on rolling, and I have been very lucky to have all these opportunities. It's a privilege.
 
 And so, I'd like to thank the biggest factor that made it all possible.
 -->
@@ -850,14 +846,25 @@ transition: none
 
 # Google Summer of Code
 
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-2024.png" />
+<v-switch>
+
+  <template #0>
+    <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-2024.png" />
+  </template>
+  <template #1>
+    <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-2024-pr.png" />
+  </template>
+
+</v-switch>
 
 <!--
-This year, Django still participated in GSoC. We had four projects this year, compared to two projects when I did mine in 2019. Different projects with different mentors and different areas of Django to improve.
+This year, Django still participated in GSoC. We had four projects, compared to two when I did mine in 2019. Different projects with different mentors and different areas of Django to improve.
 
-You no longer have to be a university student to join.
+And now, you no longer have to be a university student to join.
 
-And anybody in the community can take part in other ways. You can suggest project ideas. If you feel like it, you can also be a mentor.
+Also, anybody in the community can take part in other ways. You can suggest project ideas. Or, if you feel like it, you can also be a mentor.
+
+!!!
 
 This year, I mentored a project that adds support for updating JSONFields on the database level. It's like an SQL – sorry, a sequel – to my project. Five years later, it's very interesting to see how much of the code has changed, and how much has stayed the same.
 -->
@@ -871,9 +878,9 @@ transition: none
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/outreachy.jpg" />
 
 <!--
-There is also Outreachy. It's a similar program to GSoC, but it's aimed towards supporting diversity. These days, I see a lot of toxic people on the internet discrediting the work of someone from an underrepresented background by calling them a "DEI hire" – which is just infuriating.
+There is also Outreachy. It's a similar program to GSoC, but it's aimed towards supporting diversity.
 
-Wagtail has participated in Outreachy a few times, and I can tell you that our interns are some of the coolest people I've ever worked with. And it is really amazing what they can do with all their limitations.
+Wagtail has participated in Outreachy a few times, and I can tell you that our interns are some of the coolest people I've ever worked with.
 
 While Django has not participated in Outreachy so far, I think it's something we should look into in the future.
 -->
@@ -916,7 +923,7 @@ transition: none
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/django-contributors.png" />
 
 <!--
-One of the most obvious is to make PRs to Django. Submit bug fixes, enhancements, documentation improvements. Sure, it is not the easiest thing – but it is very, very rewarding. Seeing that purple merge icon on GitHub, and your name in the contributors list. It's one of the best feelings ever.
+One of the most obvious is to make PRs to Django. Submit bug fixes, enhancements, documentation improvements. Sure, it is not the easiest thing – but it is very, very rewarding. Seeing that purple merge icon on GitHub, and your name on the contributors list. It's one of the best feelings ever.
 -->
 
 ---
@@ -941,7 +948,7 @@ And remember – these PRs will eventually become the things you use out of Djan
 transition: none
 ---
 
-# Create tickets
+# Create and triage tickets
 
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/django-trac.png" />
 
@@ -988,7 +995,7 @@ This helps catch bugs and compatibility issues early. And it applies to both sid
 
 If all is well, you're going to have more confidence in upgrading to the final release when it comes out.
 
-In some rare cases, you'll find that it's actually a regression in Django. Which is actually great, because if you report that and it gets fixed, you'll save other people from having the same trouble.
+In some rare cases, it might turn out to be a regression in Django. Which is actually great, because if you report that and it gets fixed, you'll save other people from having the same trouble.
 
 We do this with Wagtail, and there have been a few times where we noticed some regressions and we reported and/or submitted the fix. Everyone wins.
 -->
@@ -1043,7 +1050,9 @@ Just use it. Use Django.
 
 This is a screenshot of Django's usage statistics on GitHub.
 
-I don't know what happened here when I took it, but this was not edited. I think there must've been a bug on GitHub because that's a _lot_ of cats. Do we have any cats in the room?
+I don't know what happened here when I took it, but this was not edited. I think there must've been a bug on GitHub because that's a _lot_ of cats.
+
+Unless, maybe, some of us are cats. Do we have any cats in the room?
 
 Anyway. One of the reasons why my uni teaches Django is because it's widely used in the industry. If nobody used Django – I wouldn't be here today.
 
