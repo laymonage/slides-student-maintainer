@@ -4,10 +4,10 @@ theme: the-unnamed
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 # some information about your slides, markdown enabled
-title: "Django: the web framework that changed my life"
+title: "From student to maintainer: how mentorship programs sustain Django and Wagtail"
 info: |
-  ## Django: the web framework that changed my life
-  Talk given at DjangoCon Europe 2024 in Vigo, Spain.
+  ## From student to maintainer: how mentorship programs sustain Django and Wagtail
+  Talk given at PyCon UK 2025 in Manchester, UK.
 # apply any unocss classes to the current slide
 class: text-center
 # https://sli.dev/custom/highlighters.html
@@ -68,7 +68,7 @@ Back in 2019 I did Google Summer of Code (or GSOC) with Django as a student, and
 transition: slide-up
 ---
 
-# The tagline
+# Django's tagline
 
 <v-switch>
   <template #0><img class="rounded-xl" src="/djangoproject.com.png"/></template>
@@ -120,32 +120,9 @@ transition: slide-up
 <v-switch>
   <template #0><img class="rounded-md w-md mx-auto mb-4" src="/ppw-website.png" /></template>
 
-  <template #1>
+  <template #1><img class="rounded-md w-3xl mx-auto mb-4" src="/jsonfield-postgres-0.png" /></template>
 
-```py
-def my_books(request):
-    return JsonResponse({"books": request.session['books']})
-
-def favorite(request):
-    book_id = request.POST.get('book_id')
-    if book_id and book_id not in request.session['books']:
-        request.session['books'].append(book_id)
-        request.session.modified = True
-    return JsonResponse({'success': True})
-
-def unfavorite(request):
-    book_id = request.POST.get('book_id')
-    if book_id and book_id in request.session['books']:
-        request.session['books'].remove(book_id)
-        request.session.modified = True
-    return JsonResponse({'success': True})
-```
-
-  </template>
-
-  <template #2><img class="rounded-md w-3xl mx-auto mb-4" src="/jsonfield-postgres-0.png" /></template>
-
-  <template #3>
+  <template #2>
 
 ```py
 import json
@@ -628,104 +605,12 @@ This was my first ever talk at a conference.
 transition: slide-up
 ---
 
-# Internship
-
-<v-switch>
-
-  <template #1>
-
-<div class="relative">
-  <img alt="" class="rounded-md absolute top-0 left-0 w-md mx-auto mb-4" src="/internship-0.png" />
-  <img alt="" class="rounded-md absolute top-20 right-0 w-md mx-auto mb-4" src="/internship-1.png" />
-</div>
-
-  </template>
-
-  <template #2>
-
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/internship-2.png" />
-
-  </template>
-
-</v-switch>
-
-<!--
-Later that year, I had to find an internship as part of my undergraduate degree. But unfortunately,
-
-!!!
-
-due to COVID, it was so hard to get one. A lot of the companies did not open any internship positions, and many even cancelled their programs.
-
-However, I did get lucky.
-
-!!!
-
-I have some friends who worked at an agency – they use Django. And one of them noticed my JSONField project from the DjangoChat podcast.
-
-I applied for an internship with them, and I got it. Thanks to Django!
--->
-
----
-transition: slide-up
----
-
-# Bachelor thesis
-
-<div class="relative">
-  <img alt="" class="rounded-md absolute top-16 left-46 w-xl mx-auto mb-4" src="/graduation.png" />
-  <img alt="" class="rounded-md absolute top-0 left-32 w-[17.5rem] mx-auto mb-4" src="/bachelor-thesis.png" />
-</div>
-
-<!--
-Then I wrote my bachelor thesis about my JSONField implementation – and I graduated in 2021.
-
-And of course, even my graduation was virtual. COVID sucks.
--->
-
----
-transition: slide-up
----
-
-# Django Discord
-
-<v-switch>
-
-  <template #0>
-    <img alt="" class="rounded-md w-xs mx-auto mb-4" src="/discord-0.png" />
-  </template>
-
-  <template #1>
-
-  <img alt="" class="rounded-md w-xl mx-auto mb-4" src="/discord-1.png" />
-
-  </template>
-
-</v-switch>
-
-<!--
-A few months later, Carlton hit me up about a new Django Discord server.
-
-It was not officially launched yet, so it was a bit hush-hush. But sure, I joined it.
-
-I didn't really participate that much, but I looked for job listings from time to time, since I just graduated. And then one day...
-
-!!!
-
-I saw this message from Thibaud (whom I didn't really know at the time), a job listing for a junior level developer at Torchbox, an agency in the UK. They were doing remote hiring, pretty much worldwide.
-
-So I looked at their website, and then I found...
--->
-
----
-transition: slide-up
----
-
 # A job listing
 
 <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/torchbox-listing.png" />
 
 <!--
-This!
+About a year later, I was browsing Django's Discord server, and I saw a job listing. I went to the company's website to find out more, and I saw...
 
 A job listing for a Wagtail Developer.
 
@@ -810,27 +695,7 @@ But that's not to mention the effect of all this on the people around me as well
 
 It started with me learning Django, and the rest didn't happen overnight. It's a snowball that keeps on rolling, and I have been very lucky to have all these opportunities. It's a privilege.
 
-And so, I'd like to thank the biggest factor that made it all possible.
--->
-
----
-transition: slide-up
-layout: center
----
-
-# Community
-
-<!--
-Community.
-
-None of this. None of this would've been possible without the Django community.
-
-- The Django Fellows, all the past and present fellows. They're absolute legends.
-- Other contributors, who discuss and triage tickets, reviewing PRs.
-- Django package maintainers.
-- Django users.
-- Django event organizers. Attendees.
-- And you! Whoever is watching this – right now in this room, or virtually from your own bedroom, or later on YouTube. If you're watching this, you play a part in keeping Django alive.
+And so, I'd like to thank the Django community for making it all possible.
 -->
 
 ---
@@ -860,6 +725,9 @@ transition: none
   <template #1>
     <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-2024-pr.png" />
   </template>
+  <template #2>
+    <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-2025.png" />
+  </template>
 
 </v-switch>
 
@@ -883,7 +751,7 @@ transition: none
 
 # Outreachy
 
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/outreachy.jpg" />
+<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/outreachy.png" />
 
 <!--
 There is also Outreachy. It's a similar program to GSoC, but it's aimed towards supporting diversity.
@@ -911,10 +779,13 @@ If you're interested, check out djangonaut.space. There's a panel discussion on 
 
 ---
 transition: slide-up
-layout: center
 ---
 
-# Keeping Django alive
+# Signs of successful projects
+
+- Idea
+- Motivation
+- People
 
 <!--
 Those were some of the programs we can take part in, to bring new contributors to our community.
@@ -923,149 +794,28 @@ And there are things we can do –as a community– to keep Django alive.
 -->
 
 ---
-transition: none
----
-
-# Make PRs
-
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/django-contributors.png" />
-
-<!--
-One of the most obvious is to make PRs to Django. Submit bug fixes, enhancements, documentation improvements. Sure, it is not the easiest thing – but it is very, very rewarding. Seeing that purple merge icon on GitHub, and your name on the contributors list. It's one of the best feelings ever.
--->
-
----
-transition: none
----
-
-# Review PRs
-
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/django-review.png" />
-
-<!--
-Aside from making PRs, you can also review them!
-
-Reviews can come from anyone – it doesn't have to be the Django Fellows. It's not only Natalia and Sarah who can do reviews – you can too. The fellows will take care of the merging later.
-
-You don't have to know the entire Django codebase to review PRs. With how big Django is, I don't think anyone does. But if you use Django enough, you'll be familiar with where things go.
-
-And remember – these PRs will eventually become the things you use as a Django user. Reviewing PRs from the perspective of a user really helps shape the APIs to be as friendly as they can be. So go out there and start reviewing.
--->
-
----
-transition: none
----
-
-# Create and triage tickets
-
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/django-trac.png" />
-
-<!--
-And if you use Django enough, you'll encounter moments where you wish Django can do better. Maybe you find a bug, a potential feature, or a paragraph in the documentation you wish were there.
-
-Write a ticket. Explain the situation and how you think it can be improved. Maybe others feel the same way, or maybe nobody had thought about it. Then maybe someone else works on it and get a PR merged into Django, giving you what you want – without you writing a single line of code.
-
-Or maybe it gets rejected – but it's okay, we have disagreements from time to time. You can bring it up on the forums and maybe we change our minds. Here's a fun fact: the ticket for JSONField in Django was initially rejected. So, if your idea gets rejected, do not be discouraged.
--->
-
----
-transition: none
----
-
-# Maintain packages
-
-<img alt="" class="rounded-md w-lg mx-auto mb-4" src="/django-packages.png" />
-
-<!--
-Maintain packages.
-
-Django has batteries included, but the superchargers are sold separately. For a good reason.
-
-The JSONField we now have in core wouldn't be possible without the existing packages we had in the ecosystem.
-
-So if you're a Django package maintainer, I thank you.
--->
-
----
-transition: none
----
-
-# Test against Django's main
-
-<img alt="" class="rounded-md w-3xl mx-auto mb-4" src="/django-cimain.png" />
-
-<!--
-Okay, this is an easy one.
-
-If you haven't already, add an extra setup in your CI matrix to test your project against Django's `main` branch. Whether your project is a Django package, or an actual Django project. Test against Django's main.
-
-This helps catch bugs and compatibility issues early. And it applies to both sides. You can anticipate any API changes much quicker.
-
-If all is well, you're going to be more confident in upgrading to the final release when it comes out.
-
-In some rare cases, it might turn out to be a regression in Django. Which is actually great, because if you report that and it gets fixed, you'll save other people from having the same trouble.
-
-We do this with Wagtail, and there have been a few times where we noticed some regressions and we reported and/or submitted the fix. Everyone wins.
--->
-
----
-transition: none
----
-
-# Donate
-
-<div class="relative">
-  <img alt="" class="rounded-md absolute w-lg mx-auto mb-4" src="/django-donate.png" />
-  <img alt="" class="rounded-md absolute right-0 top-36 w-sm mx-auto mb-4" src="/django-sponsors.png" />
-</div>
-
-<!--
-If you've got some extra money but not the time to do any of the previous stuff, here's an easy one.
-
-Maintaining Django costs money. The DSF pays out the Django Fellows, and that money comes from donations. So, make a donation.
--->
-
----
-transition: none
----
-
-# Participate in events
-
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/django-events.png" />
-
-<!--
-And participate in events, just like this!
-
-And if you want to take it a step further, you can help organize the events.
-
-There's plenty of opportunities to volunteer, so if you're interested, just ask the organizers.
-
-And when you return home from DjangoCon this week, check out your local Django meetups. In the UK, we have a Django meetup in London, and there are also the DjangoSocial groups in other places, including here in Durham.
-
-And finally...
--->
-
----
 transition: slide-up
 ---
 
-# Use it!
+# Making the most of it
 
-<img alt="" class="rounded-md w-4xl mx-auto mb-4" src="/django-use.png" />
+- Prepare project ideas
+- Well-documented contribution guide
+- Good first issues / easy pickings
+- Mentoring (mostly reviewing) capacity
 
-<!--
-Just use it. Use Django.
+---
+transition: slide-up
+layout: center
+---
 
-This is a screenshot of Django's usage statistics on GitHub.
+# Making it sustainable
 
-I don't know what happened here when I took it, but this was not edited. I think there must've been a bug on GitHub because that's a _lot_ of cats.
+<v-click>
 
-Unless, maybe, some of us are cats. Do we have any cats in the room?
+There is no single answer
 
-Anyway. One of the reasons why my uni teaches Django is because it's widely used in the industry. If nobody used Django – I wouldn't be here today.
-
-So, use Django. And that's it from me.
--->
+</v-click>
 
 ---
 layout: center
