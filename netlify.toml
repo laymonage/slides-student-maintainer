@@ -1,6 +1,6 @@
 [build]
 publish = "dist"
-command = "npm run build -- --base /django-life/"
+command = "npm run build -- --base /student-maintainer/"
 
 [build.environment]
 NODE_VERSION = "20"

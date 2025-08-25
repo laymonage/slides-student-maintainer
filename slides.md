@@ -1073,7 +1073,7 @@ layout: center
 
 # Thank you!
 
-[slides.laymonage.com/django-life](https://slides.laymonage.com/django-life)
+[slides.laymonage.com/student-maintainer](https://slides.laymonage.com/student-maintainer)
 
 <!--
 Thank you!
