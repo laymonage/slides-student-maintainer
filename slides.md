@@ -26,14 +26,14 @@ mdc: true
 
 <h2 class="pl-0!">
   How mentorship programs sustain
-  <img class="w-22 inline-block" alt="Django logo" src="./django-logo.svg"/>
+  <img class="w-22 inline-block" alt="Django logo" src="/django-logo.svg"/>
   and
-  <img class="w-32 inline-block mb-2" alt="Wagtail logo" src="./wagtail-logo.svg"/>
+  <img class="w-32 inline-block mb-2" alt="Wagtail logo" src="/wagtail-logo.svg"/>
 </h2>
 
 <div class="flex flex-col items-center mt-8">
 
-  <img class="w-32" alt="QR code to presentation slides" src="./qr.png" />
+  <img class="w-32" alt="QR code to presentation slides" src="/qr.png" />
   <a href="https://sage.id/pyconuk25">sage.id/pyconuk25</a>
 
 </div>
@@ -57,8 +57,8 @@ transition: fade-out
 
 
 <div class="flex flex-col gap-8 justify-between w-64 absolute top-42 right-12">
-  <img alt="Wagtail logo" src="./wagtail-logo.svg" />
-  <img alt="Torchbox logo" src="./tbx-logo-black.svg" />
+  <img alt="Wagtail logo" src="/wagtail-logo.svg" />
+  <img alt="Torchbox logo" src="/tbx-logo-black.svg" />
 </div>
 
 <style>
