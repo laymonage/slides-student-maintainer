@@ -10,6 +10,7 @@ info: |
   Talk given at PyCon UK 2025 in Manchester, UK.
 # apply any unocss classes to the current slide
 class: text-center
+colorSchema: light
 # https://sli.dev/custom/highlighters.html
 highlighter: shiki
 # https://sli.dev/guide/drawing

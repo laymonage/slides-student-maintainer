@@ -1,3 +1,10 @@
+:root {
+  --slidev-theme-code-background: lightgray;
+  --slidev-theme-primary: #fff;
+  --slidev-theme-background: #fff;
+  --slidev-theme-color: #000;
+}
+
 :not(pre) > code:before, :not(pre) > code:after {
   content: '';
 }
