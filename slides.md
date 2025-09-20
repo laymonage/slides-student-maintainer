@@ -169,7 +169,7 @@ So, I was like. Okay, how hard is it to have my own JSONField? If I can transfor
 
 what I did! I just used Python's built-in JSON library to serialize and deserialize the data, then I can save it in a TextField.
 
-That being said, I know that if I were to do this today, I would just use a dedicated model ForeignKeys to store the saved books – but hey, I was just a student looking to score some bonus points.
+That being said, I know that if I were to do this today, I would just use a dedicated model with ForeignKeys to store the saved books – but hey, I was just a student looking to score... some bonus scores.
 -->
 
 ---
@@ -230,7 +230,7 @@ Django has participated in GSoC every year since 2016. And for each year, we put
 
 I already knew about GSoC at that point, and since I've learned a bit of Django, I was curious about Django's ideas for GSoC that year.
 
-Notice how it says **in no particular order**. Well it just so happened that the first item on the list was:
+Notice how it says at the bottom, **in no particular order**. Well it just so happened that the first item on the list was:
 
 **A cross-database JSONField!**
 
@@ -285,7 +285,9 @@ Eventually I was able to land my first PR to Django – after some back and fort
 
 I learned a lot just from this one PR and it was a great experience. You get the general feeling and the common practices on how to make changes to the codebase.
 
-This is important, since you need to demonstrate that you are willing to learn. You are able to follow the instructions, and you are **patient**. Which may sound trivial, but it is actually a big deal in open source. Speaking from experience, there are people who rush to get things done and want their PR merged, but they don't follow the instructions from the maintainers. That is not a good outlook.
+This is important, since you need to demonstrate that you are willing to learn. You are able to follow the instructions, and you are **patient**. Which may sound trivial, but it is actually a big deal in open source. Speaking from experience, there are people who rush to get things done and want their PR merged, but they don't follow the instructions from the maintainers.
+
+Recently, I've even been seeing some pull requests that are clearly completely AI-generated without demonstrating that a human understood what the issue is. That is not a good look.
 
 !!!
 
@@ -327,7 +329,7 @@ It's not a perfect proposal by any means, but I put it together in between my mi
 
 !!!
 
-I posted it to the django-developers mailing list, got a few responses.
+I posted it to the django-developers mailing list, (yes, we still used a mailing list back then), got a few responses.
 
 I made a few tweaks based on the feedback.
 
@@ -438,13 +440,11 @@ I was standing on the shoulders of giants.
 
 Obviously, we already had the Postgres JSONField at the time, which worked wonders. But we also had external packages that implemented JSONField for other database backends too.
 
-- We had it in Django-MySQL !!!
-- We had one for Oracle, and !!!
-- We also had django-jsonfallback that combined the built-in Postgres and django-mysql's JSONFields before falling back to a TextField on others.
-
 !!!
 
-and many, many other packages... some of which even predated the built-in Postgres JSONField.
+- We had it in Django-MySQL
+- We had one for Oracle, and
+- and many, many other packages... some of which even predated the built-in Postgres JSONField and unfortunately unmaintained.
 -->
 
 ---
@@ -501,7 +501,7 @@ transition: slide-up
 </v-switch>
 
 <!--
-On June 9th 2019, which happened to be my 20th birthday, I submitted this initial PR to Django.
+On June 9th 2019, which happened to be my 20th birthday, I submitted this initial PR to Django. (So that's what, more than six years ago now... where did all the time go? Anyway...)
 
 You can see how many people reviewed the PR. On the right side there.
 
@@ -537,7 +537,9 @@ So it took a little over a year from when I submitted the initial PR to the day 
 
 But hey, we made it!
 
-Raise your hands if you use Django and you use `JSONField`. Thanks, glad you find it useful!
+Raise your hands if you use Django and you use `JSONField`.
+
+Why on earth would you use it? Why don't you use actual models with real tables? Or, why not just use a no-SQL database? I'm joking, thank you, glad you find it useful!
 -->
 
 ---
@@ -553,7 +555,7 @@ Then I was invited by Carlton and Will Vincent to the DjangoChat podcast. If you
 
 This was my first ever podcast. And still my only one so far.
 
-I was very nervous. I could've done better, but it's out there now, so if you do listen to it, please keep that in mind.
+I was very nervous. I could've done better, but ehh, it's out there now, so if you do listen to it, please keep that in mind.
 -->
 
 ---
@@ -576,12 +578,28 @@ transition: slide-up
 
 # A job listing
 
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/torchbox-listing.png" />
+<v-switch>
+
+  <template #0>
+
+  <img alt="" class="rounded-md w-xl mx-auto mb-4" src="/discord-1.png" />
+
+  </template>
+
+  <template #1>
+
+  <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/torchbox-listing.png" />
+
+  </template>
+
+</v-switch>
 
 <!--
 A little over a year later, I graduated from university and was working at a startup in Indonesia.
 
-One day, I was browsing Django's Discord server, and I saw a job listing. I went to the company's website to find out more, and I saw...
+One day, I was browsing Django's Discord server, and I saw a job listing for a Junior Developer by someone named Thibaud whom I didn't know at the time. But the job was remote-friendly, so I went to the company's website to find out more, and I saw...
+
+!!!
 
 A different job listing for a Wagtail Developer.
 
@@ -703,7 +721,7 @@ transition: none
 </v-switch>
 
 <!--
-This year, Django still participated in GSoC. Last year in particular, we had four projects, compared to two when I did mine in 2019. Different projects with different mentors and different areas of Django to improve.
+This year, Django still participated in GSoC. Last year in particular (point), we had four projects, compared to two when I did mine in 2019. Different projects with different mentors and different areas of Django to improve.
 
 And now, you no longer have to be a university student to join.
 
@@ -714,6 +732,10 @@ Also, anybody in the community can take part in other ways. You can suggest proj
 Last year, I mentored a project that added support for updating JSONFields on the database level. It's like an SQL – sorry, a sequel – to my project. It has come full circle.
 
 Five years later, it's very interesting to see how much of the code has changed, and how much has stayed the same.
+
+!!!
+
+This year, I mentored two projects out of four that we did for Wagtail. One project was to add Content Security Policy compatibility to Wagtail, and the other for UI improvements to the media library.
 -->
 
 ---
@@ -809,19 +831,23 @@ As a mentor, you need to provide:
 <!--
 So, having been a mentee myself, and also a mentor, here are what I think makes a successful project in a mentorship program.
 
+!!!
+
 As a mentee, I cannot stress enough how important it is to have good reading comprehension skills. As someone who is new to the project, you'll do a lot of reading to understand what the project is aiming for, and how to get there in the context of the codebase. This includes reading the contribution guide, the documentation, the relevant tickets, the discussion in those tickets, and of course, the code itself.
 
 You also need to be proactive. Don't wait for the mentor to tell you what to do next. If you have questions, ask them. If you are stuck, ask for help. If you have ideas, share them. Mentors are there to guide you, not to hold your hand the whole time.
 
 You also need to be open to feedback. Mentors will review your code and give you suggestions on how to improve it. Don't take it personally. It's not about you, or at least usually, it's about the code. Learn from the feedback and apply it.
 
-You also need to be patient. Open source is not a sprint, it's a marathon. Things take time. Reviews take time. Don't rush things, but don't slack off. Enjoy the journey.
+You also need to be patient. Instead of sprints, in open source it's more of a marathon. Things take time. Reviews take time. Don't rush things, but don't slack off. And don't turn your Slack off (at least when you're working). And, enjoy the journey.
 
 And finally, you need to be persistent. There will be challenges and setbacks. You will make mistakes. You will face rejections. But don't give up. Keep trying. Keep learning.
 
 !!!
 
 As a mentor, it's mainly about being present and supportive. Make sure you communicate regularly with your mentee so you can make sure they are on the right track and not blocked. Be timely with your reviews so they can keep the momentum going. And don't be afraid to give constructive feedback. Otherwise, they won't learn. But remember to be kind and respectful.
+
+So, overall, it's pretty obvious. But it can be quite a challenge when you're volunteering with limited time.
 -->
 
 ---
@@ -849,7 +875,9 @@ transition: slide-up
 <!--
 So, how do we make the most of these mentorship programs?
 
-First, prepare the project ideas. If you're an open source maintainer, think about what are some good projects that can be done in a few months. Good projects are well-defined, not too big and not too small. This might be obvious, but make sure the idea itself has been accepted by the community. You don't want to waste everybody's time working on something that nobody wants.
+First, prepare the project ideas. If you're an open source maintainer, think about what are some good projects that can be done in a few months. Good projects are well-defined, not too big and not too small.
+
+Also, this might be obvious, but make sure the idea itself has been accepted by the community. You don't want to waste everybody's time working on something that nobody wants, or if there's a strong pushback.
 
 Also, don't limit yourself to "core" projects. For bigger projects like Django and Python, if you don't have good ideas for the core codebase, think about the ecosystem. The supporting packages, libraries, tools, websites, and so on. Wagtail started participating in GSoC under the Django umbrella, but now we have our own organization.
 
@@ -895,11 +923,21 @@ With big projects like Python and Django, mentorship is pretty much a necessity 
 
 But how do we make it sustainable?
 
-There is no single answer to this question. Different projects have different needs and challenges. I think the important thing is to be welcoming to new contributors, and keeping the community engaged and motivated. There's this quote from Brett Cannon, one of the core developers of Python. He said that he came for the language, but he stayed for the community. I think that rings true for many people in open source.
+!!!
 
-But then again, you cannot really expect people to stick around, giving their time and energy away essentially for free.
+Unfortunately, there is no single answer to this question. Different projects have different needs and challenges. Also, you cannot really expect people to stick around, giving their time and energy away essentially for free.
 
-So from my experience, one way to do it is to make sure your community see the value of mentorship. Celebrate the successes, learn from the mistakes, and share what you've learned and achieved with the wider community.
+So the best thing you can do is to be welcoming to new contributors, and keeping the community engaged and motivated.
+
+There's this quote from Brett Cannon, one of the Python core developers.
+
+!!!
+
+I came for the language, but I stayed for the community.
+
+I think that rings true for many people in open source.
+
+One of the ways to do bring more people and get them to stay, from my experience, is to make sure your community see the value of mentorship. Celebrate the successes, learn from the mistakes, and share what you've learned and achieved with the wider community.
 -->
 
 ---
@@ -911,5 +949,5 @@ layout: center
 [slides.laymonage.com/student-maintainer](https://slides.laymonage.com/student-maintainer)
 
 <!--
-That's it from me, thank you for listening to this talk, and I hope you found it useful.
+That's it from me, thank you, I hope you found it useful.
 -->
