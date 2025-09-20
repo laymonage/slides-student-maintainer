@@ -497,25 +497,25 @@ transition: slide-up
 <v-switch>
   <template #0>
 
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-pr.1.png" />
+<img alt="PR #11452 to django/django, Fixed #12990 -- Added JSONField model field." class="rounded-md h-sm mx-auto mb-4" src="/gsoc-pr.1.png" />
 
   </template>
 
   <template #1>
 
-<img alt="" class="rounded-md w-3xl mx-auto mb-4" src="/gsoc-pr.2.png" />
+<img alt="A closer look of PR #11452 to django/django, showing that the PR was closed and a new PR #12392 was opened. The comments count is blurred." class="rounded-md w-3xl mx-auto mb-4" src="/gsoc-pr.2.png" />
 
   </template>
 
   <template #2>
 
-<img alt="" class="rounded-md w-2xl mx-auto mb-4" src="/gsoc-pr.3.png" />
+<img alt="Conversation: 321 (comments)" class="rounded-md w-2xl mx-auto mb-4" src="/gsoc-pr.3.png" />
 
   </template>
 
   <template #3>
 
-<img alt="" class="rounded-md w-3xl mx-auto mb-4" src="/gsoc-pr.4.png" />
+<img alt="PR #12392 merged to django/django on May 8 2020 with 84 comments" class="rounded-md w-3xl mx-auto mb-4" src="/gsoc-pr.4.png" />
 
   </template>
 
@@ -549,7 +549,7 @@ transition: slide-up
 
 # Months later...
 
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/jsonfield-releasenotes.png" />
+<img alt="What's new in Django 3.1: JSONField for all supported database backends" class="rounded-md h-sm mx-auto mb-4" src="/jsonfield-releasenotes.png" />
 
 <!--
 Then a few months later, in August of 2020, Django 3.1 was finally released – which included the new cross-database JSONField that I worked on.
@@ -569,7 +569,7 @@ transition: slide-up
 
 # DjangoChat
 
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/djangochat.png" />
+<img alt="DjangoChat Podcast: Google Summer of Code – Sage Abdullah" class="rounded-md h-sm mx-auto mb-4" src="/djangochat.png" />
 
 <!--
 Then I was invited by Carlton and Will Vincent to the DjangoChat podcast. If you didn't know about DjangoChat already – give it a listen.
@@ -585,7 +585,7 @@ transition: slide-up
 
 # DjangoCon Europe 2020
 
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/djceu-2020.png" />
+<img alt="DjangoCon Europe 2020 talk: Implementing a Cross-DB JSONField" class="rounded-md h-sm mx-auto mb-4" src="/djceu-2020.png" />
 
 <!--
 And then a few months later, I got the opportunity to give a talk about the JSONField implementation at DjangoCon Europe 2020. It was supposed to be in-person in Portugal, but COVID happened, so it was done virtually.
@@ -603,13 +603,13 @@ transition: slide-up
 
   <template #0>
 
-  <img alt="" class="rounded-md w-xl mx-auto mb-4" src="/discord-1.png" />
+  <img alt="A job listing from Thibaud for a Junior Developer at Torchbox UK, remote allowed" class="rounded-md w-xl mx-auto mb-4" src="/discord-1.png" />
 
   </template>
 
   <template #1>
 
-  <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/torchbox-listing.png" />
+  <img alt="A job listing on Torchbox's website for a Wagtail Developer" class="rounded-md h-sm mx-auto mb-4" src="/torchbox-listing.png" />
 
   </template>
 
@@ -639,7 +639,7 @@ transition: slide-up
 
 # First thing on the job
 
-<img alt="" v-click class="rounded-md h-sm mx-auto mb-4" src="/wagtailspace.png" />
+<img alt="Wagtail Space US 2022 talk: Bringing JSONField into Wagtail core" v-click class="rounded-md h-sm mx-auto mb-4" src="/wagtailspace.png" />
 
 <!--
 And do you know what one of the first things I did on the job was?
@@ -661,7 +661,7 @@ transition: slide-up
 
 # Moved to 🇬🇧
 
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/bristol.jpg" />
+<img alt="Sage jumping on the Clifton Suspension Bridge in Bristol" class="rounded-md h-sm mx-auto mb-4" src="/bristol.jpg" />
 
 <!--
 I moved to the UK!
@@ -677,7 +677,7 @@ transition: slide-up
 
 # Don't* meet your heroes
 
-<img alt="" class="rounded-md w-md mx-auto mb-4" src="/djceu-2021.jpg" />
+<img alt="Carlton Gibson, Sage Abdullah, Adam Johnson, Mariusz Felisiak" class="rounded-md w-md mx-auto mb-4" src="/djceu-2021.jpg" />
 
 *Unless they're from the Django community!
 
@@ -730,13 +730,13 @@ transition: none
 <v-switch>
 
   <template #0>
-    <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-2024.png" />
+    <img alt="Django's GSoC 2024 projects" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-2024.png" />
   </template>
   <template #1>
-    <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-2024-pr.png" />
+    <img alt="PR #18489 to django/django, Added support for using key and path transforms in update() for JSONFields" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-2024-pr.png" />
   </template>
   <template #2>
-    <img alt="" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-2025.png" />
+    <img alt="Wagtail's GSoC 2025 projects" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-2025.png" />
   </template>
 
 </v-switch>
@@ -765,14 +765,28 @@ transition: none
 
 # Outreachy
 
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/outreachy.png" />
+<v-switch>
+
+<template #0>
+
+  <img alt="Blog post on Wagtail.org: 'Our very first Outreachy interns'" class="rounded-md h-sm mx-auto mb-4" src="/outreachy.png" />
+
+</template>
+
+<template #1>
+
+  <img alt="Blog post on Wagtail.org: 'Introducing Wagtail's new accessibility checker" class="rounded-md h-sm mx-auto mb-4" src="/wagtail-accessibility-checker.png" />
+
+</template>
+
+</v-switch>
 
 <!--
 There is also Outreachy. It's a similar program to GSoC, but it's aimed towards supporting diversity.
 
-Wagtail has participated in Outreachy a few times, and I can tell you that our interns are some of the coolest people I've ever worked with.
+Wagtail has participated in Outreachy a few times. One of the interns that I mentored and we're really proud of, Albina, made a built-in accessibility checker into Wagtail, which helps content editors in creating more accessible content. It's really amazing to see a new contributor come in and make such a big impact.
 
-While Django has not participated in Outreachy so far, I think it's something that more open source projects should consider.
+Django itself has not participated in Outreachy so far, but I think it's something that more open source projects should consider.
 -->
 
 ---
@@ -781,7 +795,7 @@ transition: none
 
 # Djangonaut Space
 
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/djangonautspace.png" />
+<img alt="Djangonaut Space: Where contributors launch" class="rounded-md h-sm mx-auto mb-4" src="/djangonautspace.png" />
 
 <!--
 And Django also has its own Djangonaut Space, a mentorship program for people who want to get into contributing to Django.
@@ -797,7 +811,7 @@ transition: slide-up
 
 # Python Core Mentorship
 
-<img alt="" class="rounded-md h-sm mx-auto mb-4" src="/python-documentary.png" />
+<img alt="A screenshot of an email from Guido to Mariatta about starting a mentorship for Python core development" class="rounded-md h-sm mx-auto mb-4" src="/python-documentary.png" />
 
 <!--
 I'm not sure if Python has a structured mentorship program, but I found that there's a mailing list for Python Core Mentorship. If you watched the new Python documentary, you would see that even Guido himself was willing to mentor new contributors like he did with Mariatta.
@@ -967,7 +981,7 @@ layout: center
 
 # Thank you!
 
-[slides.laymonage.com/student-maintainer](https://slides.laymonage.com/student-maintainer)
+[sage.id/pyconuk25](https://sage.id/pyconuk25)
 
 <!--
 That's it from me, thank you, I hope you found it useful.
