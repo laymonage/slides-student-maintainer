@@ -3,6 +3,8 @@
   --slidev-theme-primary: #fff;
   --slidev-theme-background: #fff;
   --slidev-theme-color: #000;
+  --slidev-theme-cover-headingBg: #092E20;
+  --slidev-theme-cover-headingColor: #fff;
 }
 
 :not(pre) > code:before, :not(pre) > code:after {
