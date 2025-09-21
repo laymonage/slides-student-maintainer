@@ -34,7 +34,7 @@ mdc: true
 <div class="flex flex-col items-center mt-8">
 
   <img class="w-32" alt="QR code to presentation slides" src="/qr.png" />
-  <a href="https://sage.id/pyconuk25">sage.id/pyconuk25</a>
+  <a rel="noopener noreferrer nofollow" target="_blank" href="https://sage.id/pyconuk25">sage.id/pyconuk25</a>
 
 </div>
 
@@ -91,7 +91,7 @@ transition: slide-up
 
 <v-switch>
   <template #0>
-    <a href="https://djangoproject.com">
+    <a rel="noopener noreferrer nofollow" target="_blank" href="https://djangoproject.com">
       <img alt="Django: the web framework for perfectionists with deadlines" class="rounded-xl" src="/djangoproject.com.png"/>
     </a>
   </template>
@@ -143,7 +143,7 @@ transition: slide-up
 <v-switch>
   <template #0><img class="rounded-md w-md mx-auto mb-4" src="/ppw-website.png" /></template>
 
-  <template #1><a href="https://docs.djangoproject.com/en/3.0/ref/contrib/postgres/fields/#django.contrib.postgres.fields.JSONField"><img class="rounded-md w-3xl mx-auto mb-4" src="/jsonfield-postgres-0.png" /></a></template>
+  <template #1><a rel="noopener noreferrer nofollow" target="_blank" href="https://docs.djangoproject.com/en/3.0/ref/contrib/postgres/fields/#django.contrib.postgres.fields.JSONField"><img class="rounded-md w-3xl mx-auto mb-4" src="/jsonfield-postgres-0.png" /></a></template>
 
   <template #2>
 
@@ -218,7 +218,7 @@ transition: slide-up
 
 # An opportunity
 
-<a href="https://g.co/gsoc"><img class="rounded-md w-sm mx-auto mb-4" src="/gsoc-website.png" /></a>
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://g.co/gsoc"><img class="rounded-md w-sm mx-auto mb-4" src="/gsoc-website.png" /></a>
 
   </template>
 
@@ -227,7 +227,7 @@ transition: slide-up
 
 # An opportunity
 
-<a href="https://code.djangoproject.com/wiki/SummerOfCode2019#Ideas"><img class="rounded-md w-sm mx-auto mb-4" src="/gsoc-django.1.png" /></a>
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://code.djangoproject.com/wiki/SummerOfCode2019#Ideas"><img class="rounded-md w-sm mx-auto mb-4" src="/gsoc-django.1.png" /></a>
 
   </template>
 
@@ -235,7 +235,7 @@ transition: slide-up
 
 # A coincidence?
 
-<a href="https://code.djangoproject.com/wiki/SummerOfCode2019#AddCross-DBJSONFieldetc"><img class="rounded-md w-sm mx-auto mb-4" src="/gsoc-django.2.png" /></a>
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://code.djangoproject.com/wiki/SummerOfCode2019#AddCross-DBJSONFieldetc"><img class="rounded-md w-sm mx-auto mb-4" src="/gsoc-django.2.png" /></a>
 
   </template>
 </v-switch>
@@ -275,20 +275,20 @@ transition: slide-up
 <v-switch>
   <template #0>
 
-<a href="https://code.djangoproject.com/query?easy=1&status=new"><img alt="Django ticket tracker, filtered to easy pickings that aren't assigned or closed" class="rounded-md w-xl mx-auto mb-4" src="/easy-pickings.png" /></a>
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://code.djangoproject.com/query?easy=1&status=new"><img alt="Django ticket tracker, filtered to easy pickings that aren't assigned or closed" class="rounded-md w-xl mx-auto mb-4" src="/easy-pickings.png" /></a>
 
   </template>
 
 
   <template #1>
 
-<a href="https://github.com/django/django/pull/11133"><img alt="Fixed #30294 -- Allowed HttpResponse to accept memoryview objects" v-click class="rounded-md h-sm mx-auto mb-4" src="/first-pr.png" /></a>
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://github.com/django/django/pull/11133"><img alt="Fixed #30294 -- Allowed HttpResponse to accept memoryview objects" v-click class="rounded-md h-sm mx-auto mb-4" src="/first-pr.png" /></a>
 
   </template>
 
   <template #2>
 
-<a href="https://github.com/django/django/pulls?q=is%3Apr+author%3A%40me+">
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://github.com/django/django/pulls?q=is%3Apr+author%3A%40me+">
 <img alt="First three PRs I made to django" class="rounded-md w-4xl mx-auto mb-4" src="/first-three-prs.png" />
 </a>
 
@@ -331,13 +331,13 @@ transition: none
 <v-switch>
   <template #0>
 
-<a href="https://gist.github.com/laymonage/b53a1acbbab36b77776cd526b48fd2a5"><img alt="GSoC proposal: Add Cross-DB JSONField and ArrayField" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-proposal.png" /></a>
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://gist.github.com/laymonage/b53a1acbbab36b77776cd526b48fd2a5"><img alt="GSoC proposal: Add Cross-DB JSONField and ArrayField" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-proposal.png" /></a>
 
   </template>
 
   <template #1>
 
-<a href="https://groups.google.com/g/django-developers/c/M4dYz7T2SUo/m/b5RVjJHxBQAJ">
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://groups.google.com/g/django-developers/c/M4dYz7T2SUo/m/b5RVjJHxBQAJ">
 <img alt="Post about the proposal on the Django mailing list" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-mailist.png" />
 </a>
 
@@ -383,7 +383,7 @@ transition: slide-up
 
   <template #1>
 
-<a href="https://summerofcode.withgoogle.com/archive/2019/projects/6436908320686080">
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://summerofcode.withgoogle.com/archive/2019/projects/6436908320686080">
 <img alt="Project on the GSoC website: Add cross-DB JSONField" class="rounded-md w-4xl mx-auto mb-4" src="/gsoc-summary.png" />
 </a>
 
@@ -415,7 +415,7 @@ transition: slide-up
 <v-switch>
   <template #0>
 
-<a href="https://docs.djangoproject.com/en/3.0/ref/contrib/postgres/fields/#django.contrib.postgres.fields.JSONField"><img alt="Built-in JSONField in Django, for PostgreSQL only" class="rounded-md h-xs mx-auto mb-4" src="/jsonfield-postgres.png" /></a>
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://docs.djangoproject.com/en/3.0/ref/contrib/postgres/fields/#django.contrib.postgres.fields.JSONField"><img alt="Built-in JSONField in Django, for PostgreSQL only" class="rounded-md h-xs mx-auto mb-4" src="/jsonfield-postgres.png" /></a>
 
 Built-in `JSONField` in `django.contrib.postgres`
 
@@ -505,7 +505,7 @@ transition: slide-up
 <v-switch>
   <template #0>
 
-<a href="http://github.com/django/django/pull/11452">
+<a rel="noopener noreferrer nofollow" target="_blank" href="http://github.com/django/django/pull/11452">
 <img alt="PR #11452 to django/django, Fixed #12990 -- Added JSONField model field." class="rounded-md h-sm mx-auto mb-4" src="/gsoc-pr.1.png" />
 </a>
 
@@ -513,7 +513,7 @@ transition: slide-up
 
   <template #1>
 
-<a href="http://github.com/django/django/pull/11452">
+<a rel="noopener noreferrer nofollow" target="_blank" href="http://github.com/django/django/pull/11452">
 <img alt="A closer look of PR #11452 to django/django, showing that the PR was closed and a new PR #12392 was opened. The comments count is blurred." class="rounded-md w-3xl mx-auto mb-4" src="/gsoc-pr.2.png" />
 </a>
 
@@ -527,7 +527,7 @@ transition: slide-up
 
   <template #3>
 
-<a href="http://github.com/django/django/pull/12392">
+<a rel="noopener noreferrer nofollow" target="_blank" href="http://github.com/django/django/pull/12392">
 <img alt="PR #12392 merged to django/django on May 8 2020 with 84 comments" class="rounded-md w-3xl mx-auto mb-4" src="/gsoc-pr.4.png" />
 </a>
   </template>
@@ -562,7 +562,7 @@ transition: slide-up
 
 # Months later...
 
-<a href="https://docs.djangoproject.com/en/dev/releases/3.1/">
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://docs.djangoproject.com/en/dev/releases/3.1/">
 <img alt="What's new in Django 3.1: JSONField for all supported database backends" class="rounded-md h-sm mx-auto mb-4" src="/jsonfield-releasenotes.png" />
 </a>
 
@@ -584,7 +584,7 @@ transition: slide-up
 
 # DjangoChat
 
-<a href="https://djangochat.com/episodes/google-summer-of-code-sage-abdullah">
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://djangochat.com/episodes/google-summer-of-code-sage-abdullah">
 <img alt="DjangoChat Podcast: Google Summer of Code – Sage Abdullah" class="rounded-md h-sm mx-auto mb-4" src="/djangochat.png" />
 </a>
 
@@ -602,7 +602,7 @@ transition: slide-up
 
 # DjangoCon Europe 2020
 
-<a href="https://www.youtube.com/watch?v=o9Zb1RmS8vk">
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://www.youtube.com/watch?v=o9Zb1RmS8vk">
 <img alt="DjangoCon Europe 2020 talk: Implementing a Cross-DB JSONField" class="rounded-md h-sm mx-auto mb-4" src="/djceu-2020.png" />
 </a>
 
@@ -622,7 +622,7 @@ transition: slide-up
 
   <template #0>
 
-<a href="https://discord.com/channels/856567261900832808/857650119855308833/901190300549120091">
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://discord.com/channels/856567261900832808/857650119855308833/901190300549120091">
   <img alt="A job listing from Thibaud for a Junior Developer at Torchbox UK, remote allowed" class="rounded-md w-xl mx-auto mb-4" src="/discord-1.png" />
 </a>
 
@@ -660,7 +660,7 @@ transition: slide-up
 
 # First thing on the job
 
-<a href="https://www.youtube.com/watch?v=XtazMDNdlK8">
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://www.youtube.com/watch?v=XtazMDNdlK8">
 <img alt="Wagtail Space US 2022 talk: Bringing JSONField into Wagtail core" v-click class="rounded-md h-sm mx-auto mb-4" src="/wagtailspace.png" />
 </a>
 <!--
@@ -752,17 +752,17 @@ transition: none
 <v-switch>
 
   <template #0>
-  <a href="https://summerofcode.withgoogle.com/archive/2024/organizations/django-software-foundation-8o">
+  <a rel="noopener noreferrer nofollow" target="_blank" href="https://summerofcode.withgoogle.com/archive/2024/organizations/django-software-foundation-8o">
     <img alt="Django's GSoC 2024 projects" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-2024.png" />
   </a>
   </template>
   <template #1>
-  <a href="http://github.com/django/django/pull/18489">
+  <a rel="noopener noreferrer nofollow" target="_blank" href="http://github.com/django/django/pull/18489">
     <img alt="PR #18489 to django/django, Added support for using key and path transforms in update() for JSONFields" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-2024-pr.png" />
   </a>
   </template>
   <template #2>
-  <a href="https://summerofcode.withgoogle.com/programs/2025/organizations/wagtail">
+  <a rel="noopener noreferrer nofollow" target="_blank" href="https://summerofcode.withgoogle.com/programs/2025/organizations/wagtail">
     <img alt="Wagtail's GSoC 2025 projects" class="rounded-md h-sm mx-auto mb-4" src="/gsoc-2025.png" />
   </a>
   </template>
@@ -797,7 +797,7 @@ transition: none
 
 <template #0>
 
-<a href="https://wagtail.org/blog/our-very-first-outreachy-interns/">
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://wagtail.org/blog/our-very-first-outreachy-interns/">
   <img alt="Blog post on Wagtail.org: 'Our very first Outreachy interns'" class="rounded-md h-sm mx-auto mb-4" src="/outreachy.png" />
 </a>
 
@@ -805,7 +805,7 @@ transition: none
 
 <template #1>
 
-<a href="https://wagtail.org/blog/introducing-wagtails-new-accessibility-checker/">
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://wagtail.org/blog/introducing-wagtails-new-accessibility-checker/">
   <img alt="Blog post on Wagtail.org: 'Introducing Wagtail's new accessibility checker" class="rounded-md h-2xl mx-auto mb-4" src="/wagtail-accessibility-checker.png" />
 </a>
 
@@ -831,7 +831,7 @@ transition: none
 
 # Djangonaut Space
 
-<a href="https://djangonaut.space">
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://djangonaut.space">
 <img alt="Djangonaut Space: Where contributors launch" class="rounded-md h-sm mx-auto mb-4" src="/djangonautspace.png" />
 </a>
 
@@ -849,7 +849,7 @@ transition: slide-up
 
 # Python Core Mentorship
 
-<a href="https://www.youtube.com/watch?v=GfH4QL4VqJ0">
+<a rel="noopener noreferrer nofollow" target="_blank" href="https://www.youtube.com/watch?v=GfH4QL4VqJ0">
 <img alt="A screenshot of an email from Guido to Mariatta about starting a mentorship for Python core development" class="rounded-md h-sm mx-auto mb-4" src="/python-documentary.png" />
 </a>
 
