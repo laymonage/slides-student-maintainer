@@ -78,7 +78,7 @@ I'm Sage Abdullah, you can find me online @laymonage on GitHub, Mastodon, Bluesk
 
 I'm from Indonesia.
 
-These days I work at Torchbox in the UK to maintain and develop Wagtail CMS, an open source content-management system built on top of Django. So, thank you to Torchbox for paying me to be here. If you want to know more about us or Wagtail, please feel free to talk to me later. I will also be around for sprints tomorrow morning.
+These days I work at Torchbox in the UK to maintain and develop Wagtail CMS, an open source content-management system built on top of Django. So, thank you to Torchbox for paying me to be here. If you want to know more about us or Wagtail, please find me at the Django booth. I will also be around for sprints tomorrow morning.
 
 Back in 2019 I did Google Summer of Code (or GSOC) with Django, as a student, and last year, I was a mentor.
 -->
