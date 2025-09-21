@@ -1,11 +1,11 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# From student to maintainer: How mentorship programs sustain Django and Wagtail
 
-To start the slide show:
+Talk given at PyCon UK 2025 (2025-09-21) in Manchester, UK.
+
+To view the slides, visit https://slides.laymonage.com/student-maintainer/ or clone the repository and run it locally:
 
 - `npm install`
 - `npm run dev`
 - visit http://localhost:3030
 
-Edit the [slides.md](./slides.md) to see the changes.
-
-Learn more about Slidev on [documentations](https://sli.dev/).
+Built using [Slidev](https://sli.dev/).
