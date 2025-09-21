@@ -981,6 +981,8 @@ layout: center
 
 # Thank you!
 
+<img class="w-64 mt-8" alt="QR code to presentation slides" src="/qr.png" />
+
 [sage.id/pyconuk25](https://sage.id/pyconuk25)
 
 <!--
