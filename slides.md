@@ -306,9 +306,7 @@ Eventually I was able to land my first PR to Django – after some back and fort
 
 I learned a lot just from this one PR and it was a great experience. You get the general feeling and the common practices on how to make changes to the codebase.
 
-This is important, since you need to demonstrate that you are willing to learn. You are able to follow the instructions, and you are **patient**. Which may sound trivial, but it is actually a big deal in open source. Speaking from experience, there are people who rush to get things done and want their PR merged, but they don't follow the instructions from the maintainers.
-
-Recently, I've even been seeing some pull requests that are clearly completely AI-generated without demonstrating that a human understood what the issue is. That is not a good look.
+This is important, since you need to demonstrate that you are willing to learn. You are able to follow the instructions, and you are **patient**. Which may sound trivial, but it is actually a big deal in open source. Speaking from experience, there are people who rush to get things done and want their PR merged, but they don't follow the instructions from the maintainers. That is not a good look.
 
 !!!
 
