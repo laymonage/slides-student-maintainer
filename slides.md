@@ -924,7 +924,7 @@ And finally, you need to be persistent. There will be challenges and setbacks. Y
 
 As a mentor, it's mainly about being present and supportive. Make sure you communicate regularly with your mentee so you can make sure they are on the right track and not blocked. Be timely with your reviews so they can keep the momentum going. And don't be afraid to give constructive feedback. Otherwise, they won't learn. But remember to be kind and respectful.
 
-So, overall, it's pretty obvious. But it can be quite a challenge when you're volunteering with limited time.
+So, overall, it's pretty obvious. But it can be quite a challenge when you're volunteering with limited time. Also, especially when it's all virtual. I think having a scheduled weekly video call helps a lot.
 -->
 
 ---
