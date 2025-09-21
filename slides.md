@@ -39,7 +39,9 @@ mdc: true
 </div>
 
 <!--
-Halo!
+Hello everyone!
+
+Thank you for coming, and thanks to all the organizers for such a wonderful event. I hope you're all having a great time as I am. It's not my first time speaking at a conference, but it is my first time at PyCon UK and my first PyCon as well, so I'm very excited to be here.
 -->
 
 ---
@@ -72,8 +74,6 @@ transition: fade-out
 </style>
 
 <!--
-Thank you everybody for coming, and thanks to all the organizers for such a wonderful event. It's not my first time speaking at a conference, but it is my first time at PyCon UK and my first PyCon as well, so I'm very excited to be here.
-
 I'm Sage Abdullah, you can find me online @laymonage on GitHub, Mastodon, Bluesky, and other places.
 
 I'm from Indonesia.
@@ -400,7 +400,7 @@ It was happening!!!
 
 !!!
 
-So, over the course of the summer, I worked on the project. So, usually GSoC projects have like one or two mentors. I was slightly intimidated when I saw that I had not one, not two, but four people mentoring me. It felt like the expectation was quite high.
+So, over the course of the summer, I worked on the project. Usually, GSoC projects have like one or two mentors. I was slightly intimidated when I saw that I had not one, not two, but four people mentoring me. It felt like the expectation was quite high.
 
 But thankfully, I didn't have to start from scratch.
 -->
@@ -651,7 +651,7 @@ I looked at the requirements, and I think I pretty much ticked all the boxes, so
 
 Then I did a couple interviews and a coding task. I was interviewed by Tom Dyson, the CTO at the time, and he knew about my JSONField stuff. A few days later, I got the job!
 
-They wanted me to move to the UK as soon as possible, but it was such a surprise for me and my family. So I asked to work remotely for a few months while we sort out my visa and stuff.
+They wanted me to move to the UK as soon as possible, but it was such a surprise for me and my family. So I asked to work remotely for a few months while we sorted out my visa and stuff.
 -->
 
 ---
@@ -806,7 +806,7 @@ transition: none
 <template #1>
 
 <a href="https://wagtail.org/blog/introducing-wagtails-new-accessibility-checker/">
-  <img alt="Blog post on Wagtail.org: 'Introducing Wagtail's new accessibility checker" class="rounded-md h-sm mx-auto mb-4" src="/wagtail-accessibility-checker.png" />
+  <img alt="Blog post on Wagtail.org: 'Introducing Wagtail's new accessibility checker" class="rounded-md h-2xl mx-auto mb-4" src="/wagtail-accessibility-checker.png" />
 </a>
 
 </template>
@@ -816,7 +816,11 @@ transition: none
 <!--
 There is also Outreachy. It's a similar program to GSoC, but it's aimed towards supporting diversity.
 
-Wagtail has participated in Outreachy a few times. One of the interns that I mentored and we're really proud of, Albina, made a built-in accessibility checker into Wagtail, which helps content editors in creating more accessible content. It's really amazing to see a new contributor come in and make such a big impact.
+Wagtail has participated in Outreachy a couple times.
+
+!!!
+
+One of the interns that I mentored and we're really proud of, Albina, made a built-in accessibility checker into Wagtail, which helps content editors create more accessible content. It's really amazing to see a new contributor come in and make such a big impact.
 
 Django itself has not participated in Outreachy so far, but I think it's something that more open source projects should consider.
 -->
@@ -850,7 +854,9 @@ transition: slide-up
 </a>
 
 <!--
-I'm not sure if Python has a structured mentorship program, but I found that there's a mailing list for Python Core Mentorship. If you watched the new Python documentary, you would see that even Guido himself was willing to mentor new contributors like he did with Mariatta.
+I'm not sure if Python has a structured mentorship program, but I found that there's a mailing list for Python Core Mentorship.
+
+If you watched the new Python documentary, which I highly recommend, you would see that even Guido himself was willing to mentor new contributors like he did with Mariatta.
 -->
 
 ---
@@ -1008,7 +1014,7 @@ I came for the language, but I stayed for the community.
 
 I think that rings true for many people in open source.
 
-One of the ways to do bring more people and get them to stay, from my experience, is to make sure your community see the value of mentorship. Celebrate the successes, learn from the mistakes, and share what you've learned and achieved with the wider community.
+One of the ways to bring more people and get them to stay, from my experience, is to make sure your community see the value of mentorship. Celebrate the successes, learn from the mistakes, and share what you've learned and achieved with the wider community.
 -->
 
 ---
